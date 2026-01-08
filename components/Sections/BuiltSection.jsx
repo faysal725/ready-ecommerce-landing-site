@@ -2,12 +2,13 @@ import Heading from "@/components/Common/Heading";
 import SectionContainer from "@/components/Common/SectionContainer";
 import GradientBorderWrapper from "../wrapper/GradientBorderWrapper";
 import clsx from "clsx";
+import SliderContainer from "../Containers/SliderContainer";
 
 
 function FeatureCard({ featureCardData }) {
 
     return (
-        <div className="flex flex-col items-center gap-[30px] rounded-2xl transition-all duration-200 border border-[#e5e5e7]/92 hover:border-red-light hover:bg-red-light/20 p-4">
+        <div className="min-w-[280px] flex flex-col items-center gap-[30px] rounded-2xl transition-all duration-200 snap-center border border-[#e5e5e7]/92 hover:border-red-light hover:bg-red-light/20 p-4">
             <div className='w-full flex justify-start'>
                 <GradientBorderWrapper
                     colors={['#F8D5DE', '#ff8dac']}
@@ -79,8 +80,12 @@ export default function BuiltSection() {
                         }
                     </div>
 
-                    <div>
-
+                    <div className="flex justify-start items-center gap-4 md:hidden overflow-x-scroll snap-x scrollbar_hide">
+                        {
+                            featureData.map((feature, index) => (
+                                <FeatureCard key={index} featureCardData={feature} />
+                            ))
+                        }
 
                     </div>
                 </>

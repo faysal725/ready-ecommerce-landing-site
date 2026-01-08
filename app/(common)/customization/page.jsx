@@ -8,6 +8,7 @@ import ButtonLarge from "@/components/Button/ButtonLarge";
 import SectionContainer from "@/components/Common/SectionContainer";
 import Heading from "@/components/Common/Heading";
 import BuiltSection from "@/components/Sections/BuiltSection";
+import HowCustomizationWorksSection from "@/components/Sections/HowCustomizationWorksSection";
 
 function HeadingSection() {
   return (
@@ -47,6 +48,15 @@ export default function Customization() {
 
       {/* built section */}
       <BuiltSection />
+
+
+      {/* how customization works */}
+      <HowCustomizationWorksSection />
+
+
+
+      {/* growing business */}
+      
 
       {/* faq section */}
       <section className="max-w-[800px] mx-auto py-[50px] px-6 lg:px-0">
