@@ -9,6 +9,7 @@ import SectionContainer from "@/components/Common/SectionContainer";
 import Heading from "@/components/Common/Heading";
 import BuiltSection from "@/components/Sections/BuiltSection";
 import HowCustomizationWorksSection from "@/components/Sections/HowCustomizationWorksSection";
+import GrowingBusinessSection from "@/components/Sections/GrowingBusinessSection";
 
 function HeadingSection() {
   return (
@@ -56,7 +57,7 @@ export default function Customization() {
 
 
       {/* growing business */}
-      
+      <GrowingBusinessSection />
 
       {/* faq section */}
       <section className="max-w-[800px] mx-auto py-[50px] px-6 lg:px-0">
@@ -69,8 +70,8 @@ export default function Customization() {
 
 
       <CTASection
-        heading="Still Have Questions?"
-        description="Schedule a call with our team to discuss your specific needs.
+        heading="Let’s Build Something That Works for You"
+        description="Tell us what you need—we’ll take care of the rest.
       ">
         <ButtonLargeWhite name="Schedule a Meeting" />
       </CTASection>
