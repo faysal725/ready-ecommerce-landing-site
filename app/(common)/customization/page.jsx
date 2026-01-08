@@ -5,6 +5,9 @@ import Herosection3 from "@/components/Sections/Herosection3";
 import Heading3 from "@/components/Common/Heading3";
 import Link from "next/link";
 import ButtonLarge from "@/components/Button/ButtonLarge";
+import SectionContainer from "@/components/Common/SectionContainer";
+import Heading from "@/components/Common/Heading";
+import BuiltSection from "@/components/Sections/BuiltSection";
 
 function HeadingSection() {
   return (
@@ -41,6 +44,9 @@ export default function Customization() {
     <div>
       <Herosection3 mainComponent={<HeadingSection />} />
 
+
+      {/* built section */}
+      <BuiltSection />
 
       {/* faq section */}
       <section className="max-w-[800px] mx-auto py-[50px] px-6 lg:px-0">

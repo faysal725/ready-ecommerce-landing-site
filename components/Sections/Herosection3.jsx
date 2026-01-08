@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export default function Herosection3({mainComponent, additionalContainerClass}) {
     return (
-        <section className={clsx(additionalContainerClass," bg-deep-navy h-[490px] md:h-[590px] overflow-hidden flex flex-col justify-start md:justify-center items-center relative pt-6 lg:pt-0")}>
+        <section className={clsx(additionalContainerClass," bg-deep-navy h-fit lg:h-[590px] overflow-hidden flex flex-col justify-start md:justify-center items-center relative py-10")}>
             <div className="container flex flex-col gap-6 lg:gap-[60px] items-center justify-center z-10">
                {
                 mainComponent && mainComponent
