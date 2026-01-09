@@ -14,7 +14,7 @@ export default function Heading3({
         <section className={clsx(containerAdditionalClass, " flex flex-col items-center gap-2.5 md:gap-5")}>
             {
                 title && <div className="flex justify-center items-center">
-                    <div className="text-white p-2.5 rounded-[50px] bg-white/[0.16] border border-[#f8d5de]/20">
+                    <div className="text-primary-red p-2.5 rounded-[50px] bg-primary-red/25 border border-[#f8d5de]/20">
                         <p>{title}</p>
                     </div>
                 </div>
