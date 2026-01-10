@@ -13,6 +13,8 @@ import GrowingBusinessSection from "@/components/Sections/GrowingBusinessSection
 import ButtonIconLargeWhite from "@/components/Button/ButtonIconLargeWhite";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhiteOutline";
+import InvestmentSection from "@/components/Sections/InvestmentSection";
+import CustomServicesSection from "@/components/Sections/CustomServicesSection";
 
 function HeadingSection() {
   return (
@@ -31,7 +33,7 @@ function HeadingSection() {
               <ButtonLarge name="Start Your Project" additionalClass="w-full md:w-[220px]" />
             </Link>
 
-            
+
 
             <Link href="https://demo.readyecommerce.app/admin/" target="_blank">
               <ButtonIconLargeWhiteOutline name="See Portfolio" additionalClass="w-full md:w-[220px]" >
@@ -59,14 +61,17 @@ export default function Services() {
       <Herosection3 mainComponent={<HeadingSection />} />
 
 
+      {/* built section */}
+      <CustomServicesSection />
 
 
-      <CTASection
-        heading="Let’s Build Something That Works for You"
-        description="Tell us what you need—we’ll take care of the rest.
-      ">
-        <ButtonLargeWhite name="Schedule a Meeting" />
-      </CTASection>
+      {/* investment section */}
+      <InvestmentSection />
+
+
+
+
+
     </div>
   );
 }
