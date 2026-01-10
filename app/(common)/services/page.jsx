@@ -136,18 +136,18 @@ const IdeasSection = () => {
 
   return (
     <section className="py-[50px] pt-[100px]">
-      <div className="max-w-[1020px] mx-auto flex flex-col gap-[60px]">
-        <div className="flex flex-col items-center gap-10">
-          <p className="text-4xl font-semibold">
+      <div className="max-w-[1020px] mx-auto flex flex-col gap-[60px] px-4 px-0">
+        <div className="flex flex-col items-center gap-4 md:gap-10">
+          <p className="text-[28px] md:text-4xl font-semibold font-[Poppins text-center">
             Where Your <span className="text-primary-red">Ideas Drive the Build</span>
           </p>
-          <p className="text-xl text-center text-[#626262]">
+          <p className="text-sm md:text-xl text-center text-[#626262]">
             Why settle for generic when you can have genius? Whether you're scaling a niche marketplace, automating logistics, or pioneering AR shopping, our custom development turns ideas into revenue engines. <span className="text-[#24262d]">100+ projects live, 98% client retention</span>.
           </p>
         </div>
 
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-2 md:gap-6">
           <GradientBorderWrapper
             colors={['#ffcbd94d', '#f97e7e5c', '#ff8dac']}
             thickness="2"
@@ -155,20 +155,20 @@ const IdeasSection = () => {
             padding="0px"
             angle="350deg"
           >
-            <div className="p-6 pt-12 relative bg-white rounded-3xl">
-              <div className="absolute -top-8 right-0 w-full flex justify-center">
-                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+            <div className="p-3 md:p-6 h-[111px] md:h-[145px] relative flex flex-col items-center justify-end bg-white rounded-3xl">
+              <div className="absolute -top-6 md:-top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-12 w-12 md:h-16 md:w-16 rounded-xl flex justify-center items-center'>
                   <img src="/icons/sections/IdeasSection/2.svg" alt="" className='w-7 h-7' />
                 </div>
               </div>
 
               <p
-                className="text-4xl font-bold text-center text-primary-red"
+                className="text-xl md:text-4xl font-bold text-center text-primary-red"
               >
                 150+
               </p>
 
-              <p className="text-base text-center text-primary-black">
+              <p className="text-xs md:text-base text-center text-primary-black">
                 Projects Delivered
               </p>
 
@@ -184,20 +184,20 @@ const IdeasSection = () => {
             padding="0px"
             angle="180deg"
           >
-            <div className="p-6 pt-12 relative bg-white rounded-3xl">
-              <div className="absolute -top-8 right-0 w-full flex justify-center">
-                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+            <div className="p-3 md:p-6 h-[111px] md:h-[145px] relative flex flex-col items-center justify-end bg-white rounded-3xl">
+              <div className="absolute -top-6 md:-top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-12 w-12 md:h-16 md:w-16 rounded-xl flex justify-center items-center'>
                   <img src="/icons/sections/IdeasSection/2.svg" alt="" className='w-7 h-7' />
                 </div>
               </div>
 
               <p
-                className="text-4xl font-bold text-center text-primary-red"
+                className="text-xl md:text-4xl font-bold text-center text-primary-red"
               >
                 98%
               </p>
 
-              <p className="text-base text-center text-primary-black">
+              <p className="text-xs md:text-base text-center text-primary-black">
                 Client Satisfaction
               </p>
 
@@ -213,20 +213,20 @@ const IdeasSection = () => {
             padding="0px"
             angle="350deg"
           >
-            <div className="p-6 pt-12 relative bg-white rounded-3xl">
-              <div className="absolute -top-8 right-0 w-full flex justify-center">
-                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+            <div className="p-3 md:p-6 h-[111px] md:h-[145px] relative flex flex-col items-center justify-end bg-white rounded-3xl">
+              <div className="absolute -top-6 md:-top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-12 w-12 md:h-16 md:w-16 rounded-xl flex justify-center items-center'>
                   <img src="/icons/sections/IdeasSection/3.svg" alt="" className='w-7 h-7' />
                 </div>
               </div>
 
               <p
-                className="text-4xl font-bold text-center text-primary-red"
+                className="text-xl md:text-4xl font-bold text-center text-primary-red"
               >
                 2 Weeks
               </p>
 
-              <p className="text-base text-center text-primary-black">
+              <p className="text-xs md:text-base text-center text-primary-black">
                 Average Delivery Time
               </p>
 
