@@ -21,6 +21,7 @@ import GradientBorderWrapper from "@/components/wrapper/GradientBorderWrapper";
 import clsx from "clsx";
 import TestimonialCarousel2 from "@/components/Sections/TestimonialCarousel2";
 import ButtonIconLarge from "@/components/Button/ButtonIconLarge";
+import BehindStorySection from "@/components/Sections/BehindStorySection";
 
 function HeadingSection() {
   return (
@@ -61,10 +62,8 @@ export default function AboutUs() {
     <div>
       <Herosection3 mainComponent={<HeadingSection />} />
 
-
-
-      {/* built section */}
-      <CustomServicesSection />
+      {/* behind stor section */}
+      <BehindStorySection />
 
 
       <ConsultationSection2 headingText="Let's Start a Conversation" subHeadingText="Have a question or want to work together? We'd love to hear from you." />
