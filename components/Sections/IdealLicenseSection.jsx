@@ -37,7 +37,11 @@ function IdealLicenseSection() {
                             Regular License
                         </p>
                         <div className="space-y-[10px]">
-                            <p className="text-[44px] font-semibold text-primary-red">$39 <span className="text-lg text-left text-[#626262] font-normal">one-time</span></p>
+                            <p className=" text-primary-red">
+                                <span className="text-2xl font-normal"> <s>$39</s> </span>
+                                <span className="text-[44px] font-semibold">$39</span>
+                                <span className="text-lg text-left text-[#626262] font-normal">one-time</span>
+                            </p>
                             <p
                                 className="text-base text-left text-[#626262]"
                             >
@@ -46,17 +50,22 @@ function IdealLicenseSection() {
                         </div>
 
                         <div className="flex flex-col gap-[15px]">
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Lifetime source code.</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> One-time payment</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> No hidden charges</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Full software installation</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Free payment gateway setup</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Software documentation</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Lifetime free updates</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Admin, vendor & delivery boy panel</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Android user app included</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Monthly support</p>
-                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> iOS version not included</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Lifetime License Validity</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Permitted for 1 Domain</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5">
+                                <img src="/icons/tick-red.svg" alt="" /> 6 months of general and technical support (As per Envato support policy)
+                            </p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> All Premium Features</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Lifetime Free Update
+                            </p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> For Personal Project
+                            </p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> For Commercial Projects (if end product is paid)</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Postman Collection for REST API Documentation</p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Admin Panel FREE Installation in cPanel (one time)
+                            </p>
+                            <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Priority Support
+                            </p>
                         </div>
 
                         <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
@@ -75,7 +84,11 @@ function IdealLicenseSection() {
                             Extended License
                         </p>
                         <div className="space-y-[10px]">
-                            <p className="text-[44px] font-semibold text-white">$199 <span className="text-lg text-left text-white/80 font-normal">one-time</span></p>
+                            <p className=" text-white">
+                                <span className="text-2xl font-normal"> <s>$399</s> </span>
+                                <span className="text-[44px] font-semibold">$199</span>
+                                <span className="text-lg text-left text-white/80 font-normal">one-time</span>
+                            </p>
                             <p
                                 className="text-base text-left text-white/80"
                             >
@@ -84,17 +97,21 @@ function IdealLicenseSection() {
                         </div>
 
                         <div className="flex flex-col gap-[15px]">
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Lifetime source code.</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> One-time payment</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> No hidden charges</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Full software installation</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Free payment gateway setup</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Software documentation</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Lifetime free updates</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Admin, vendor & delivery boy panel</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Android + iOS user apps</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> All features unlocked</p>
-                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Monthly support</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Lifetime License Validity</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Permitted for 1 Domain</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />
+                                6 months of general and technical support (As per Envato support policy)
+                            </p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> All Premium Features</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5">
+                                <img src="/icons/tick-white.svg" alt="" />
+                                Lifetime Free Update</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> For Personal Project</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> For Commercial Projects (if end product is paid)</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />
+                                Postman Collection for REST API Documentation</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Admin Panel FREE Installation in cPanel (one time)</p>
+                            <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Priority Support</p>
                         </div>
 
                         <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg  bg-white  cursor-pointer">

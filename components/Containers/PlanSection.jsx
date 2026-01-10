@@ -22,16 +22,37 @@ export default function PlanSection() {
                 </div>
 
                 <div className="flex flex-col gap-[15px] flex-1">
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Full software installation</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Server configuration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Domain setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> SSL certificate setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Payment gateway integration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> SMS gateway setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Email configuration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Demo data setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Custom branding</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Priority support</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Setup website & admin panel</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Configure Ready Commerce User App, Delivery Man app and User Webstie with and admin panel.</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />User App Configuration (App Name, Package Name, Logo, Splash Image, theme color)</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Seller App Configuration (App Name, Package Name, Logo, Splash Image, theme color)
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />SMTP Mail configuration
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Existing Paymet Getway Confirgration
+
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />SMS Gateway Configuration (Existing)
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />User App all resoruce Manage, Configration App and publish Play Store</p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Seller App all resoruce Manage, Configration App and publish Play Store</p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Translate all applications to your local language (User app)
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />User App all resoruce Manage, Configration App and publish AppStore
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Seller App all resoruce Manage, Configration App and publish AppStore
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Delivery Man App Configuration (App Name, Package Name, Logo, Splash Image, theme color) and publish Play Store
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Deliveryman App all resource Manage, Configuration App and publish AppStore.
+                    </p>
                 </div>
 
                 <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
@@ -59,16 +80,37 @@ export default function PlanSection() {
                 </div>
 
                 <div className="flex flex-col gap-[15px] flex-1">
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Full software installation</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Server configuration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Domain setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> SSL certificate setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Payment gateway integration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> SMS gateway setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Email configuration</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Demo data setup</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Custom branding</p>
-                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" /> Priority support</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Setup website & admin panel</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Configure Ready Commerce User App, Delivery Man app and User Webstie with and admin panel.</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />User App Configuration (App Name, Package Name, Logo, Splash Image, theme color)</p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Seller App Configuration (App Name, Package Name, Logo, Splash Image, theme color)
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />SMTP Mail configuration
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Existing Paymet Getway Confirgration
+
+                    </p>
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />SMS Gateway Configuration (Existing)
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />User App all resoruce Manage, Configration App and publish Play Store</p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" />Seller App all resoruce Manage, Configration App and publish Play Store</p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-red.svg" alt="" /> Translate all applications to your local language (User app)
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />User App all resoruce Manage, Configration App and publish AppStore
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Seller App all resoruce Manage, Configration App and publish AppStore
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Delivery Man App Configuration (App Name, Package Name, Logo, Splash Image, theme color) and publish Play Store
+                    </p>
+
+                    <p className="text-base text-left text-[#626262] flex justify-start items-start gap-2 leading-5"> <img src="/icons/cross-white.svg" alt="" />Deliveryman App all resource Manage, Configuration App and publish AppStore.
+                    </p>
                 </div>
 
 
@@ -98,16 +140,20 @@ export default function PlanSection() {
                 </div>
 
                 <div className="flex flex-col gap-[15px] flex-1">
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Full software installation</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Server configuration</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Domain setup</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> SSL certificate setup</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Payment gateway integration</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> SMS gateway setup</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Email configuration</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Demo data setup</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Custom branding</p>
-                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Priority support</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Setup website & admin panel</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Configure Ready Commerce User App, Delivery Man app and User Webstie with and admin panel.</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />User App Configuration (App Name, Package Name, Logo, Splash Image, theme color)</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Seller App Configuration (App Name, Package Name, Logo, Splash Image, theme color)</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />SMTP Mail configuration</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Existing Paymet Getway Confirgration</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />SMS Gateway Configuration (Existing)</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />User App all resoruce Manage, Configration App and publish Play Store</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Seller App all resoruce Manage, Configration App and publish Play Store</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Translate all applications to your local language (User app)</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />User App all resoruce Manage, Configration App and publish AppStore</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Seller App all resoruce Manage, Configration App and publish AppStore</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Delivery Man App Configuration (App Name, Package Name, Logo, Splash Image, theme color) and publish Play Store</p>
+                    <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Deliveryman App all resource Manage, Configuration App and publish AppStore.</p>
                 </div>
 
                 <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg cursor-pointer bg-white">
