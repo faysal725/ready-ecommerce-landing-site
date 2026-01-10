@@ -70,7 +70,16 @@ export default function Services() {
       <InvestmentSection />
 
 
-
+      <SectionContainer
+        HeadingComponent={
+          <Heading
+            headingText="Awesome Highlights"
+            varient="light"
+          />
+        }
+        mainComponent={<p>sdfsdf</p>}
+        backgroundColorClass="bg-[#fff1f4]"
+      />
 
       <ConsultationSection2 />
     </div>
