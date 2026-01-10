@@ -1,4 +1,4 @@
-import { getCountries } from "@/lib/dataFetching/getCountries";
+
 import ButtonIconSmall from "../Button/ButtonIconSmall";
 import ButtonLarge from "../Button/ButtonLarge";
 import Heading from "../Common/Heading";
@@ -9,25 +9,24 @@ import ConsultationForm2 from "../Form/Container/ConsultationForm2";
 
 async function FormSection() {
 
-    const countries = await getCountries()
 
 
     return (
         <div className="max-w-[690px] mx-auto">
-            <ConsultationForm2 countryOption={countries} />
+            <ConsultationForm2 />
         </div>
     )
 }
 
 
-export default function ConsultationSection2() {
+export default function ConsultationSection2({headingText, subHeadingText}) {
     return (
         <>
             <SectionContainer
                 HeadingComponent={
                     <Heading
-                        headingText="Let’s Build Something Powerful"
-                        subHeadingText="Tell us what you’re planning—we’ll help you shape it into a scalable product. Free 30-minute consultation included."
+                        headingText={headingText}
+                        subHeadingText={subHeadingText}
                         varient="dark"
                         containerAdditionalClass="max-w-4xl"
                     />

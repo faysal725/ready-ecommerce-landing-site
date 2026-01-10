@@ -351,7 +351,7 @@ export default function Services() {
       {/* testimonial section */}
       <TestimonialSection />
 
-      <ConsultationSection2 />
+      <ConsultationSection2 headingText="Let’s Build Something Powerful" subHeadingText="Tell us what you’re planning—we’ll help you shape it into a scalable product. Free 30-minute consultation included." />
 
 
 

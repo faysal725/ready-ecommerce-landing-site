@@ -11,7 +11,7 @@ import { fullBaseUrl } from '@/lib/exportVariables'
 import crud from '@/lib/axios'
 
 
-export default function ConsultationForm2({ countryOption }) {
+export default function ConsultationForm2() {
 
 
   return (
