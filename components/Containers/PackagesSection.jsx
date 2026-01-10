@@ -12,7 +12,7 @@ export default function PackagesSection() {
                 >
                     Discovery Phase
                 </p>
-                <div className="space-y-[10px]">
+                <div className="space-y-2.5">
                     <p className="text-[44px] font-semibold text-primary-red">$999</p>
                     <p
                         className="text-base text-left text-[#626262]"

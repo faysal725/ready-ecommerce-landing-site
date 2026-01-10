@@ -113,7 +113,7 @@ export default function CustomServicesSection() {
                 </>
             }
 
-            backgroundColorClass="!pt-6 md:!pt-[50px]"
+            backgroundColorClass="!pt-6 md:!pt-[50px] !pb-6 md:!pb-[50px]"
         />
     )
 }
