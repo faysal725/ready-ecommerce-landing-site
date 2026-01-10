@@ -8,7 +8,7 @@ import SliderContainer from "../Containers/SliderContainer";
 function FeatureCard({ featureCardData }) {
 
     return (
-        <div className="min-w-[300px] flex-1 flex flex-col items-center gap-3 md:gap-[30px] rounded-2xl transition-all duration-200 snap-center border border-[#e5e5e7]/92 hover:border-red-light hover:bg-red-light/20 p-4">
+        <div className="min-w-[285px] flex-1 flex flex-col items-center gap-3 md:gap-[30px] rounded-2xl transition-all duration-200 snap-center border border-[#e5e5e7]/92 hover:border-red-light hover:bg-red-light/20 p-4">
             <div className='w-full flex justify-start'>
 
                 <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-[68px] w-[68px] rounded-xl flex justify-center items-center'>

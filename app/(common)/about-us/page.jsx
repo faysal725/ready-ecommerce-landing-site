@@ -27,9 +27,8 @@ function HeadingSection() {
 
 
       <Heading3
-        title="Custom Software Development"
-        headingText="Build an eCommerce Platform That Fits Your Business"
-        subHeadingText="Outgrown templates and plug-ins? We design and develop custom eCommerce software tailored to your exact business model—from advanced workflows to AI-powered features and scalable multi-vendor systems."
+        headingText="Where Innovation Meets Excellence"
+        subHeadingText="At Ready eCommerce, we craft digital experiences that empower businesses and delight customers worldwide. "
         varient="dark"
         buttonSection={
           <div className="flex justify-center items-center flex-wrap gap-[15px]">
@@ -305,7 +304,7 @@ function TestimonialSection() {
   )
 }
 
-export default function Services() {
+export default function AboutUs() {
 
   const faqData = [
     { question: "How much does customization cost?", answer: "Pricing depends on scope and complexity. We always share a clear quote upfront." },
