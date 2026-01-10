@@ -16,6 +16,9 @@ import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhit
 import InvestmentSection from "@/components/Sections/InvestmentSection";
 import CustomServicesSection from "@/components/Sections/CustomServicesSection";
 import ConsultationSection2 from "@/components/Sections/ConsultationSection2";
+import { Fragment } from "react";
+import GradientBorderWrapper from "@/components/wrapper/GradientBorderWrapper";
+import clsx from "clsx";
 
 function HeadingSection() {
   return (
@@ -49,6 +52,194 @@ function HeadingSection() {
 }
 
 
+
+function StepContainer() {
+
+
+  const steps = [
+    {
+      title: "Discovery",
+      description: "We understand your goals, challenges, and success metrics.",
+      iconSrc: "/icons/sections/JourneyStep/1.svg",
+    },
+    {
+      title: "Design",
+      description: "UX/UI prototypes aligned with user behavior and business logic.",
+      iconSrc: "/icons/sections/JourneyStep/2.svg",
+    },
+    {
+      title: "Development",
+      description: "Agile sprints with continuous progress updates.",
+      iconSrc: "/icons/sections/JourneyStep/3.svg",
+    },
+    {
+      title: "Testing Refinement",
+      description: "In-house QA & feedback-driven improvements.",
+      iconSrc: "/icons/sections/JourneyStep/4.svg",
+    },
+    {
+      title: "Launch & Support",
+      description: "Deployment, documentation, and post-launch assistance.",
+      iconSrc: "/icons/sections/JourneyStep/5.svg",
+    },
+  ]
+
+  return (
+    <div className="relative">
+      <span className="w-full h-0.5  absolute top-1/2 left-0 bg-gray-400/20 hidden lg:block"></span>
+      <div className="flex justify-start items-center overflow-x-scroll snap-x scrollbar_hide gap-4">
+        {
+          steps.map((step, index) => {
+            return (
+              <StepCard key={index} stepData={step} stepNo={index + 1} />
+            )
+          })
+        }
+      </div>
+    </div>
+  )
+}
+
+const StepCard = ({ stepData, stepNo }) => {
+  console.log(stepData)
+  return (
+    <div className={clsx("min-w-[214px] p-4 flex flex-col justify-center gap-2.5 rounded-xl relative overflow-hidden snap-center h-[225.03px] bg-white", stepNo % 2 == 0 && "mt-0 xl:mt-12")}>
+      <span className=" text-sm font-medium text-white py-[3.5px] text-center absolute bg-primary-red w-52 rotate-45 top-6 -right-[60px]">STEP — 0{stepNo}</span>
+      <div>
+        <GradientBorderWrapper
+          colors={['#ffffff', '#ff8dac']}
+          thickness="2"
+          borderRadius="50%"
+          padding="0px"
+          angle="150deg"
+        >
+          <div className='bg-pink-100 p-3 rounded-full w-fit'>
+            <img src={stepData.iconSrc} alt="" className='w-6 h-6' />
+          </div>
+        </GradientBorderWrapper>
+      </div>
+      <p
+        className="text-lg font-semibold text-left text-primary-black"
+      >
+        {stepData.title}
+      </p>
+      <p className="text-sm text-left text-[#626262]">
+        {stepData.description}
+      </p>
+    </div>
+  )
+}
+
+
+const IdeasSection = () => {
+
+
+  return (
+    <section className="py-[50px] pt-[100px]">
+      <div className="max-w-[1020px] mx-auto flex flex-col gap-[60px]">
+        <div className="flex flex-col items-center gap-10">
+          <p className="text-4xl font-semibold">
+            Where Your <span className="text-primary-red">Ideas Drive the Build</span>
+          </p>
+          <p className="text-xl text-center text-[#626262]">
+            Why settle for generic when you can have genius? Whether you're scaling a niche marketplace, automating logistics, or pioneering AR shopping, our custom development turns ideas into revenue engines. <span className="text-[#24262d]">100+ projects live, 98% client retention</span>.
+          </p>
+        </div>
+
+
+        <div className="grid grid-cols-3 gap-6">
+          <GradientBorderWrapper
+            colors={['#ffcbd94d', '#f97e7e5c', '#ff8dac']}
+            thickness="2"
+            borderRadius="22px"
+            padding="0px"
+            angle="350deg"
+          >
+            <div className="p-6 pt-12 relative bg-white rounded-3xl">
+              <div className="absolute -top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+                  <img src="/icons/sections/IdeasSection/2.svg" alt="" className='w-7 h-7' />
+                </div>
+              </div>
+
+              <p
+                className="text-4xl font-bold text-center text-primary-red"
+              >
+                150+
+              </p>
+
+              <p className="text-base text-center text-primary-black">
+                Projects Delivered
+              </p>
+
+            </div>
+
+          </GradientBorderWrapper>
+
+
+          <GradientBorderWrapper
+            colors={['#ffcbd94d', '#f97e7e5c', '#ff8dac']}
+            thickness="2"
+            borderRadius="22px"
+            padding="0px"
+            angle="180deg"
+          >
+            <div className="p-6 pt-12 relative bg-white rounded-3xl">
+              <div className="absolute -top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+                  <img src="/icons/sections/IdeasSection/2.svg" alt="" className='w-7 h-7' />
+                </div>
+              </div>
+
+              <p
+                className="text-4xl font-bold text-center text-primary-red"
+              >
+                98%
+              </p>
+
+              <p className="text-base text-center text-primary-black">
+                Client Satisfaction
+              </p>
+
+            </div>
+
+          </GradientBorderWrapper>
+
+
+          <GradientBorderWrapper
+            colors={['#ffcbd94d', '#f97e7e5c', '#ff8dac']}
+            thickness="2"
+            borderRadius="22px"
+            padding="0px"
+            angle="350deg"
+          >
+            <div className="p-6 pt-12 relative bg-white rounded-3xl">
+              <div className="absolute -top-8 right-0 w-full flex justify-center">
+                <div className='bg-linear-to-b from-[#D63384] via-primary-red to-primary-red h-16 w-16 rounded-xl flex justify-center items-center'>
+                  <img src="/icons/sections/IdeasSection/3.svg" alt="" className='w-7 h-7' />
+                </div>
+              </div>
+
+              <p
+                className="text-4xl font-bold text-center text-primary-red"
+              >
+                2 Weeks
+              </p>
+
+              <p className="text-base text-center text-primary-black">
+                Average Delivery Time
+              </p>
+
+            </div>
+
+          </GradientBorderWrapper>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export default function Services() {
 
   const faqData = [
@@ -62,6 +253,9 @@ export default function Services() {
       <Herosection3 mainComponent={<HeadingSection />} />
 
 
+      <IdeasSection />
+
+
       {/* built section */}
       <CustomServicesSection />
 
@@ -73,11 +267,13 @@ export default function Services() {
       <SectionContainer
         HeadingComponent={
           <Heading
-            headingText="Awesome Highlights"
+
+            headingTitle="How We Work"
+            headingText="Our 5-Step Custom Journey"
             varient="light"
           />
         }
-        mainComponent={<p>sdfsdf</p>}
+        mainComponent={<StepContainer />}
         backgroundColorClass="bg-[#fff1f4]"
       />
 

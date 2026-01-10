@@ -73,8 +73,8 @@ export default function PackagesSection() {
                 >
                     Enterprise & Scale
                 </p>
-                <div className="space-y-[10px]">
-                    <p className="text-[44px] font-semibold text-primary-red">Custom Quote</p>
+                <div className="space-y-2.5">
+                    <p className="text-[28px] pb-5 font-semibold text-primary-red">Custom Quote</p>
                     <p
                         className="text-base text-left text-[#626262]"
                     >
