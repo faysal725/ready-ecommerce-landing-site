@@ -257,7 +257,7 @@ function HelpMenu() {
                 </Link>
 
                 {/* card 2 */}
-                <Link href="https://razinsoft.com/about-us" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                <Link href="/about-us" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <p className="text-base font-medium text-left text-[#24262d]">About Us</p>
                 </Link>
