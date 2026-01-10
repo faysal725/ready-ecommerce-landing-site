@@ -48,77 +48,7 @@ function ProductGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 relative">
 
 
-
             {/* card 1 */}
-            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
-                <div className="flex flex-col items-center gap-6 ">
-                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                        <img src="/icons/sections/onlineBusiness/panel.svg" alt="" />
-                    </div>
-                    <div className="w-full space-y-4">
-                        <p
-                            className="w-full text-2xl font-semibold text-center text-white"
-                        >
-                            Super Admin Panel
-                        </p>
-                        <p className="text-base text-center text-white/60">
-                            Manage the entire system, distribute e-money, and set business rules.
-                        </p>
-                    </div>
-
-                    <Link href="https://demo.readyecommerce.app/admin/" target="_blank">
-                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
-                    </Link>
-                </div>
-            </div>
-
-            {/* card 2 */}
-            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
-                <div className="flex flex-col items-center gap-6 ">
-                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                        <img src="/icons/sections/onlineBusiness/link.svg" alt="" />
-                    </div>
-                    <div className="w-full space-y-4">
-                        <p
-                            className="w-full text-2xl font-semibold text-center text-white"
-                        >
-                            User Website
-                        </p>
-                        <p className="text-base text-center text-white/60">
-                            A single admin panel to control your store, payments, and integrations.
-                        </p>
-                    </div>
-
-                    <Link href="https://demo.readyecommerce.app/" target="_blank">
-                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
-                    </Link>
-                </div>
-            </div>
-
-            {/* card 3 */}
-            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
-                <div className="flex flex-col items-center gap-6 ">
-                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                        <img src="/icons/sections/onlineBusiness/store.svg" alt="" />
-                    </div>
-                    <div className="w-full space-y-4">
-                        <p
-                            className="w-full text-2xl font-semibold text-center text-white"
-                        >
-                            Store Admin Panel
-                        </p>
-                        <p className="text-base text-center text-white/60">
-                            Control your store operations with a smart, all-in-one admin panel.
-                        </p>
-                    </div>
-
-                    <Link href="https://demo.readyecommerce.app/shop/login" target="_blank">
-                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
-                    </Link>
-                </div>
-            </div>
-
-            {/* card 4 */}
             <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
                 <div className="flex flex-col items-center gap-6 ">
                     <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
@@ -128,10 +58,10 @@ function ProductGrid() {
                         <p
                             className="w-full text-2xl font-semibold text-center text-white"
                         >
-                            User App
+                            Customer App
                         </p>
                         <p className="text-base text-center text-white/60">
-                            A smooth shopping app with easy buying, tracking, and promo updates.
+                            Browse, order, pay, and track deliveries easily.
                         </p>
                     </div>
 
@@ -155,12 +85,83 @@ function ProductGrid() {
             </div>
 
 
+            {/* card 2 */}
+            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
+                <div className="flex flex-col items-center gap-6 ">
+                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                        <img src="/icons/sections/onlineBusiness/link.svg" alt="" />
+                    </div>
+                    <div className="w-full space-y-4">
+                        <p
+                            className="w-full text-2xl font-semibold text-center text-white"
+                        >
+                            Customer Website
+                        </p>
+                        <p className="text-base text-center text-white/60">
+                            Shop online, place orders, and track purchases.
+                        </p>
+                    </div>
 
-            {/* card 5 */}
+                    <Link href="https://demo.readyecommerce.app/" target="_blank">
+                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
+                    </Link>
+                </div>
+            </div>
+
+            {/* card 3 */}
+            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
+                <div className="flex flex-col items-center gap-6 ">
+                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                        <img src="/icons/sections/onlineBusiness/panel.svg" alt="" />
+                    </div>
+                    <div className="w-full space-y-4">
+                        <p
+                            className="w-full text-2xl font-semibold text-center text-white"
+                        >
+                            Admin Panel
+                        </p>
+                        <p className="text-base text-center text-white/60">
+                            Manage products, orders, users, and reports.
+                        </p>
+                    </div>
+
+                    <Link href="https://demo.readyecommerce.app/admin/" target="_blank">
+                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
+                    </Link>
+                </div>
+            </div>
+
+
+
+            {/* card 4 */}
+            <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
+                <div className="flex flex-col items-center gap-6 ">
+                    <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                        <img src="/icons/sections/onlineBusiness/store.svg" alt="" />
+                    </div>
+                    <div className="w-full space-y-4">
+                        <p
+                            className="w-full text-2xl font-semibold text-center text-white"
+                        >
+                            Seller Panel 
+                        </p>
+                        <p className="text-base text-center text-white/60">
+                            Upload products, manage orders, and track earnings.
+                        </p>
+                    </div>
+
+                    <Link href="https://demo.readyecommerce.app/shop/login" target="_blank">
+                        <ButtonLarge name="Explore The Demo" additionalClass="w-[220px]" />
+                    </Link>
+                </div>
+            </div>
+
+
+            {/* card 6 */}
             <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
                 <span className=" text-sm font-medium text-black py-[3.5px] text-center absolute bg-yellow-400 w-52 rotate-45 top-4 -right-[70px]">Add-on</span>
 
-                <div className="flex flex-col items-center gap-6 ">
+                <div className="flex flex-col items-center gap-6 h-full">
                     <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
                         <img src="/icons/sections/onlineBusiness/seller-app.svg" alt="" />
                     </div>
@@ -171,11 +172,11 @@ function ProductGrid() {
                             Seller App
                         </p>
                         <p className="text-base text-center text-white/60">
-                            Helps vendors manage products, orders, and sales efficiently.
+                            Handle sales and orders on the go.
                         </p>
                     </div>
 
-                    <div className="flex justify-center items-center gap-[10px]">
+                    <div className="flex justify-center items-center gap-[10px] mt-auto">
 
                         <Link href="https://play.google.com/store/apps/details?id=com.readyecommerce.sellerapp&pcampaignid=web_share" target="_blank">
                             <ButtonIconSmall name="Google Play" >
@@ -197,7 +198,7 @@ function ProductGrid() {
 
 
 
-            {/* card 6 */}
+            {/* card 7 */}
             <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 ">
                 <span className=" text-sm font-medium text-black py-[3.5px] text-center absolute bg-yellow-400 w-52 rotate-45 top-4 -right-[70px]">Add-on</span>
 
@@ -209,10 +210,10 @@ function ProductGrid() {
                         <p
                             className="w-full text-2xl font-semibold text-center text-white"
                         >
-                            Delivery Man App
+                            Delivery App
                         </p>
                         <p className="text-base text-center text-white/60">
-                            Manage deliveries, track routes, and update order statuses in real time.
+                            Accept orders, navigate, and update delivery status.
                         </p>
                     </div>
 
@@ -235,17 +236,6 @@ function ProductGrid() {
                     </div>
                 </div>
             </div>
-
-
-            {/* this is for gradient background. it's now under development */}
-
-            {/* <div className="relative z-10">
-                <GradientContainer>
-                    <div className=" p-6 rounded-xl overflow-hidden">
-                        asdfasdfsdf
-                    </div>
-                </GradientContainer>
-            </div> */}
         </div>
     )
 }
@@ -296,84 +286,6 @@ function ProductSlider() {
 
                 {/* card 1 */}
                 <div className='px-3 '>
-
-                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
-                        <div className="flex flex-col items-center gap-6 ">
-                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                                <img src="/icons/sections/onlineBusiness/panel.svg" alt="" />
-                            </div>
-                            <div className="w-full space-y-4">
-                                <p
-                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
-                                >
-                                    Super Admin Panel
-                                </p>
-                                <p className="text-base text-center text-white/60 line-clamp-2">
-                                    Manage the entire system, distribute e-money, and set business rules.
-                                </p>
-                            </div>
-
-                            <Link href="https://demo.readyecommerce.app/admin/" target="_blank">
-                                <ExploreBtn />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                {/* card 2 */}
-                <div className='px-3 '>
-
-                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
-                        <div className="flex flex-col items-center gap-6 ">
-                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                                <img src="/icons/sections/onlineBusiness/link.svg" alt="" />
-                            </div>
-                            <div className="w-full space-y-4">
-                                <p
-                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
-                                >
-                                    User Website
-                                </p>
-                                <p className="text-base text-center text-white/60 line-clamp-2">
-                                    A single admin panel to control your store, payments, and integrations.
-                                </p>
-                            </div>
-
-                            <Link href="https://demo.readyecommerce.app/" target="_blank">
-                                <ExploreBtn />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                {/* card 3 */}
-                <div className='px-3 '>
-
-                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
-                        <div className="flex flex-col items-center gap-6 ">
-                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
-                                <img src="/icons/sections/onlineBusiness/store.svg" alt="" />
-                            </div>
-                            <div className="w-full space-y-4">
-                                <p
-                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
-                                >
-                                    Store Admin Panel
-                                </p>
-                                <p className="text-base text-center text-white/60 line-clamp-2">
-                                    Control your store operations with a smart, all-in-one admin panel.
-                                </p>
-                            </div>
-
-                            <Link href="https://demo.readyecommerce.app/shop/login" target="_blank">
-                                <ExploreBtn />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                {/* card 4 */}
-                <div className='px-3 '>
                     <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
                         <div className="flex flex-col items-center gap-6 ">
                             <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
@@ -383,10 +295,10 @@ function ProductSlider() {
                                 <p
                                     className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
                                 >
-                                    User App
+                                    Customer App
                                 </p>
                                 <p className="text-base text-center text-white/60 line-clamp-2">
-                                    A smooth shopping app with easy buying, tracking, and promo updates.
+                                    Browse, order, pay, and track deliveries easily.
                                 </p>
                             </div>
 
@@ -408,6 +320,90 @@ function ProductSlider() {
 
                 </div>
 
+                {/* card 2 */}
+                <div className='px-3 '>
+
+                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
+                        <div className="flex flex-col items-center gap-6 ">
+                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                                <img src="/icons/sections/onlineBusiness/link.svg" alt="" />
+                            </div>
+                            <div className="w-full space-y-4">
+                                <p
+                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
+                                >
+                                    Customer Website
+                                </p>
+                                <p className="text-base text-center text-white/60 line-clamp-2">
+                                    Shop online, place orders, and track purchases.
+                                </p>
+                            </div>
+
+                            <Link href="https://demo.readyecommerce.app/" target="_blank">
+                                <ExploreBtn />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {/* card 3 */}
+                <div className='px-3 '>
+
+                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
+                        <div className="flex flex-col items-center gap-6 ">
+                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                                <img src="/icons/sections/onlineBusiness/panel.svg" alt="" />
+                            </div>
+                            <div className="w-full space-y-4">
+                                <p
+                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
+                                >
+                                    Admin Panel
+                                </p>
+                                <p className="text-base text-center text-white/60 line-clamp-2">
+                                   Manage products, orders, users, and reports.
+                                </p>
+                            </div>
+
+                            <Link href="https://demo.readyecommerce.app/admin/" target="_blank">
+                                <ExploreBtn />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {/* card 4 */}
+                <div className='px-3 '>
+
+                    <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
+                        <div className="flex flex-col items-center gap-6 ">
+                            <div className="w-[68px] h-[68px] border-[1.3px] border-primary-red/30 flex justify-center items-center rounded-xl">
+                                <img src="/icons/sections/onlineBusiness/store.svg" alt="" />
+                            </div>
+                            <div className="w-full space-y-4">
+                                <p
+                                    className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
+                                >
+                                    Seller Panel
+                                </p>
+                                <p className="text-base text-center text-white/60 line-clamp-2">
+                                    Upload products, manage orders, and track earnings.
+                                </p>
+                            </div>
+
+                            <Link href="https://demo.readyecommerce.app/shop/login" target="_blank">
+                                <ExploreBtn />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 {/* card 5 */}
                 <div className='px-3 '>
                     <div className="bg-white/3 border-[1.3px] border-white/8 transition-all duration-200 hover:border-primary-red/50 rounded-xl overflow-hidden relative z-10 p-6 h-full">
@@ -424,7 +420,7 @@ function ProductSlider() {
                                     Seller App
                                 </p>
                                 <p className="text-base text-center text-white/60 line-clamp-2">
-                                    Helps vendors manage products, orders, and sales efficiently.
+                                    Handle sales and orders on the go.
                                 </p>
                             </div>
 
@@ -462,10 +458,10 @@ function ProductSlider() {
                                 <p
                                     className="w-full text-2xl font-semibold text-center line-clamp-1 text-white"
                                 >
-                                    Delivery Man App
+                                    Delivery App
                                 </p>
                                 <p className="text-base text-center text-white/60 line-clamp-2">
-                                    Manage deliveries, track routes, and update order statuses in real time.
+                                    Accept orders, navigate, and update delivery status.
                                 </p>
                             </div>
 
