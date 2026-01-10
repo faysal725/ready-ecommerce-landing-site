@@ -15,6 +15,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhiteOutline";
 import InvestmentSection from "@/components/Sections/InvestmentSection";
 import CustomServicesSection from "@/components/Sections/CustomServicesSection";
+import ConsultationSection2 from "@/components/Sections/ConsultationSection2";
 
 function HeadingSection() {
   return (
@@ -71,7 +72,7 @@ export default function Services() {
 
 
 
-
+      <ConsultationSection2 />
     </div>
   );
 }

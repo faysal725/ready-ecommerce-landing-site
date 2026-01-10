@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import clsx from "clsx";
 
 export default function Dropdown({
     label,
@@ -12,6 +13,7 @@ export default function Dropdown({
     errorMsg = "",
     onChange,
     options = [],
+    varient = "light",
     ...props
 }) {
     return (
@@ -25,7 +27,7 @@ export default function Dropdown({
                 }
             </label>
 
-            <div className="relative h-10 sm:h-12 w-full block  text-xs sm:text-base font-normal bg-white cursor-pointer">
+            <div className={clsx("relative h-10 sm:h-12 w-full block  text-xs sm:text-base font-normal  cursor-pointer overflow-hidden rounded-xl", varient === 'light' ? 'bg-white' : 'bg-transparent text-white')}>
                 <select
                     id={label}
                     name={label}
@@ -33,7 +35,7 @@ export default function Dropdown({
                     onChange={onChange}
                     required={required}
                     {...props}
-                    className="w-full h-full pl-3 sm:pl-4 appearance-none border border-[#e5e5e7]/[0.92] outline-red-light rounded-xl"
+                    className="w-full h-full pl-3 sm:pl-4 appearance-none rounded-xl border border-[#e5e5e7]/[0.92] outline-red-light "
                 >
                     <option value="" disabled>
                         Select {title}

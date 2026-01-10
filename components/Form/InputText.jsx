@@ -1,6 +1,7 @@
 'use client'
 
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline"
+import clsx from "clsx";
 import { useState } from "react";
 
 export default function InputText({
@@ -11,6 +12,7 @@ export default function InputText({
   required = false,
   errorMsg = "",
   onChange,
+  varient = "light",
   ...props
 }) {
 
@@ -21,7 +23,7 @@ export default function InputText({
     <div className="relative w-full flex flex-col justify-between gap-2.5">
       <label htmlFor={label} className="block "
       >
-        <span className="text-sm sm:text-base font-medium text-start text-[#0d1a29] capitalize">{title}</span>
+        <span className={clsx("text-sm sm:text-base font-medium text-start  capitalize", varient === 'light' ? 'text-[#0d1a29]k' : 'text-white')}>{title}</span>
         {
           required &&
           <span className="input-required-tag text-primary-red">*</span>
@@ -36,7 +38,7 @@ export default function InputText({
           value={value}        // controlled
           onChange={onChange}
           {...props}
-          className="h-10 sm:h-12 w-full px-3 sm:px-4 block rounded-xl bg-white/10 border border-[#e5e5e7]/[0.92] outline-red-light placeholder:text-xs sm:placeholder:text-base"
+          className={clsx("h-10 sm:h-12 w-full px-3 sm:px-4 block rounded-xl  placeholder:text-xs sm:placeholder:text-base", varient === 'light' ? 'bg-white/10 border border-[#e5e5e7]/92 outline-red-light' : 'bg-white/10 border border-white/16 outline-none text-white')}
           required={required}
         />
 
