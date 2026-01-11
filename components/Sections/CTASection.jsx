@@ -9,9 +9,9 @@ export default function CTASection({heading= "", description="", children}) {
 
             <div className='px-4 2xl:px-0'>
                 <div className='container bg-linear-to-b from-pink-500  to-primary-red to-50% py-6 md:py-[60px] rounded-3xl relative z-10'>
-                    <Heading headingText={heading} subHeadingText={description} varient="dark" />
+                    <Heading headingText={heading} subHeadingText={description} varient="dark" subHeadingAdditionalClass="max-w-[748px]"/>
 
-                    <div className="flex justify-center items-center gap-[15px] pt-6 md:pt-10 relative w-fit mx-auto">
+                    <div className="flex justify-center items-center gap-[15px] pt-6 md:pt-10 relative w-full md:w-fit mx-auto">
                         {children}
 
                         <img src="/icons/sections/CTASection/arrow.svg" alt="" className='absolute top-4 -right-28 w-[55px] h-[67px] hidden md:block' />
