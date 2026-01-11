@@ -15,7 +15,7 @@ function FeatureCard({ featureCardData }) {
         <div className="w-full rounded-lg  flex flex-col items-center snap-center gap-[15px] p-3 sm:p-4 bg-white">
             <img src={featureCardData.imageSrc} alt="" className="w-14 h-14 object-cover"/>
 
-            <p className="text-xs sm:text-base font-medium text-center text-[#626262]">
+            <p className="text-xs lg:text-base font-medium text-center text-[#626262]">
                 {featureCardData.title}
             </p>
         </div>

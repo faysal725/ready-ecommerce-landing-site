@@ -11,10 +11,11 @@ import BuiltSection from "@/components/Sections/BuiltSection";
 import HowCustomizationWorksSection from "@/components/Sections/HowCustomizationWorksSection";
 import GrowingBusinessSection from "@/components/Sections/GrowingBusinessSection";
 import ButtonIconLargeWhite from "@/components/Button/ButtonIconLargeWhite";
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
+import { ArrowRightIcon, CheckCircleIcon } from "@heroicons/react/20/solid";
 import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhiteOutline";
 import SolutionSection from "@/components/Sections/SolutionSection";
 import InterfaceDecisionSection from "@/components/Sections/InterfaceDecisionSection";
+import TechnologySection from "@/components/Sections/TechnologySection";
 
 function HeadingSection() {
   return (
@@ -49,28 +50,49 @@ function HeadingSection() {
 
 
 function OurVisionSection() {
-  
+
 
   return (
-      <SectionContainer
-        mainComponent={<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
-          <div className="flex justify-start items-center">
-            <div className=" max-w-[494px] mx-auto lg:mx-0">
-              <p className="text-[28px] md:text-4xl font-semibold pt-5 pb-4 leading-snug md:leading-normal text-center lg:text-start">Our Vision</p>
-              <p className="text-sm lg:text-xl  text-[#626262] text-center lg:text-start">
-                We set out to create an all-in-one eCommerce ecosystem that is flexible, scalable, and easy to manage — without sacrificing performance or user experience.
-              </p>
-            </div>
+    <SectionContainer
+      mainComponent={<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
+        <div className="flex justify-start items-center">
+          <div className=" max-w-[494px] mx-auto lg:mx-0">
+            <p className="text-[28px] md:text-4xl font-semibold pt-5 pb-4 leading-snug md:leading-normal text-center lg:text-start">Our Vision</p>
+            <p className="text-sm lg:text-xl  text-[#626262] text-center lg:text-start">
+              We set out to create an all-in-one eCommerce ecosystem that is flexible, scalable, and easy to manage — without sacrificing performance or user experience.
+            </p>
           </div>
-          <div className="">
-            <img src="/images/sections/OurVision/1.png" alt="" className="w-full" />
-          </div>
-        </div>}
-        backgroundColorClass="!pb-[50px]"
-      />
+        </div>
+        <div className="">
+          <img src="/images/sections/OurVision/1.png" alt="" className="w-full" />
+        </div>
+      </div>}
+      backgroundColorClass="!pb-[50px]"
+    />
   )
 }
 
+
+function WhyWorksSection() {
+  const reasonsToWorkData = ["Design for founders, not just developers", "Flexible enough for agencies and enterprises", "Build in scalability without complexity", "Backed by continuous updates and support"]
+
+  return (
+    <section className="max-w-[666px] mx-auto py-[50px] lg:py-[100px] flex flex-col gap-6 md:gap-[60px] px-4 md:px-0">
+      <p className="text-[28px] md:text-4xl font-semibold text-center text-primary-black">Why Ready eCommerce Works</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6">
+        {reasonsToWorkData.map((reason, index) => (
+          <div key={index} className="p-4 rounded-lg flex justify-start items-stretch gap-[15px] border border-red-light">
+            <img src="/icons/tick-red-solid.svg" alt="" className="h-[30px] w-[30px]" />
+
+            <p className="text-xs md:text-base font-medium text-left text-[#626262]">
+              Design for founders, not just developers
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
 
 
 export default function CaseStudy() {
@@ -86,7 +108,7 @@ export default function CaseStudy() {
       <Herosection3 mainComponent={<HeadingSection />} additionalContainerClass="min-h-[746px]" />
 
 
-      
+
 
       {/* our vision section */}
       <OurVisionSection />
@@ -96,6 +118,17 @@ export default function CaseStudy() {
 
       {/* design & ux decision */}
       <InterfaceDecisionSection />
+
+
+      {/* technology and architecture */}
+      <TechnologySection />
+
+
+      asdfasdf
+
+      {/* why ready ecommerce works */}
+      <WhyWorksSection />
+
 
       <CTASection
         heading="Ready to Build Your Own eCommerce Platform?"
