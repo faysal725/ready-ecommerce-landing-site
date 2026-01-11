@@ -16,6 +16,7 @@ import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhit
 import SolutionSection from "@/components/Sections/SolutionSection";
 import InterfaceDecisionSection from "@/components/Sections/InterfaceDecisionSection";
 import TechnologySection from "@/components/Sections/TechnologySection";
+import ImpactSection from "@/components/Sections/ImpactSection";
 
 function HeadingSection() {
   return (
@@ -124,7 +125,7 @@ export default function CaseStudy() {
       <TechnologySection />
 
 
-      asdfasdf
+      <ImpactSection />
 
       {/* why ready ecommerce works */}
       <WhyWorksSection />
