@@ -7,16 +7,16 @@ import Heading from '../Common/Heading'
 
 function StepNoComponent({ step }) {
     return (
-        <img src={step} alt="" className='w-7 h-7' />
+        <img src={step} alt="" className='w-5 h-5 md:w-7 md:h-7' />
     )
 }
 
 function StepDescriptionComponent({ descriptionData }) {
 
     return (
-        <div className='flex flex-col justify-start gap-2.5 h-28'>
+        <div className='flex flex-col justify-start gap-2.5 md:h-28'>
             <p className="text-base font-medium text-left text-primary-red">{descriptionData.year}</p>
-            <div>
+            <div className='space-y-2.5'>
                 <p className="text-base font-semibold text-left text-primary-black">{descriptionData.title}</p>
                 <p className="text-sm text-left text-[#2b2424]/60">
                     {descriptionData.description}
@@ -44,7 +44,19 @@ export default function BehindStorySection() {
                     varient="light"
                 />
             }
-            mainComponent={<StepContainer stepData={stepData} />}
+            mainComponent={
+                <div className="">
+                    <StepContainer stepData={stepData} isReverse={true} showTail={true} />
+                    <div className='flex flex-col items-start md:items-center mt-[50px]'>
+                        <img src="/icons/sections/GrowingBusinessSection/quote2.svg" alt="" className="w-[50px] mx-auto" />
+
+                        <p className="text-xl md:text-[28px] italic text-start md:text-center font-medium text-primary-black my-4 md:mt-6 md:mb-5 font-['poppins']">
+                            We believe in creating technology that empowers businesses to <br /> reach their full potential in the digital age.
+                        </p>
+                        <p class="text-lg text-start md:text-center text-[#626262]/60 font-['poppins']">— Founding Team</p>
+                    </div>
+                </div>
+            }
             backgroundColorClass="bg-white"
         />
     )

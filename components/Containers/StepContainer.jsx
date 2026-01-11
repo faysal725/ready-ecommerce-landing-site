@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 
-export default function StepContainer({ stepData }) {
+export default function StepContainer({ stepData, isReverse = false, showTail = false }) {
 
     return (
         <>
@@ -10,14 +10,19 @@ export default function StepContainer({ stepData }) {
             <div className="hidden md:block">
                 {
                     stepData.map((step, index) => {
-                        const isEven = index % 2 === 0;
+                        const isReverseFlow = (index) => {
+                            if (isReverse) {
+                                return index % 2 !== 0;
+                            }
+                            return index % 2 === 0;
+                        }
                         const isFirst = index === 0;
                         const isLast = index === stepData.length - 1;
                         return (
                             <div key={index} className="grid grid-cols-12">
                                 <div className='col-span-5'>
-                                    {!isEven && (
-                                        <div className='rounded-xl border border-gray-200 p-4'>
+                                    {!isReverseFlow(index) && (
+                                        <div className='rounded-xl border border-gray-200 transition-all duration-200 hover:bg-red-light/20 hover:border-red-light p-4'>
                                             {step.stepDescriptionComponent}
                                         </div>
                                     )}
@@ -31,16 +36,18 @@ export default function StepContainer({ stepData }) {
 
                                     </div>
                                     <div className='absolute w-full h-full z-0 top-0 right-0 flex justify-center items-center'>
-                                        <span className={clsx('w-full border ', !isEven ? 'border-[#dcdcdc]' : 'border-transparent')}></span>
-                                        <span className={clsx('w-full border ', isEven ? 'border-[#dcdcdc]' : 'border-transparent')}></span>
+                                        <span className={clsx('w-full border ', !isReverseFlow(index) ? 'border-[#dcdcdc]' : 'border-transparent')}></span>
+                                        <span className={clsx('w-full border ', isReverseFlow(index) ? 'border-[#dcdcdc]' : 'border-transparent')}></span>
                                     </div>
 
-                                    <span className={clsx("block flex-1 border ", isLast ? "border-transparent" : "border-[#dcdcdc]")}></span>
+                                    <span className={clsx("block flex-1 border ", isLast && !showTail ? "border-transparent" : "border-[#dcdcdc]")}>
+                                        <span className='block bg-[#dcdcdc] w-'></span>
+                                    </span>
                                 </div>
 
                                 <div className='col-span-5'>
-                                    {isEven && (
-                                        <div className='rounded-xl border border-gray-200 p-4'>
+                                    {isReverseFlow(index) && (
+                                        <div className='rounded-xl border border-gray-200 transition-all duration-200 hover:bg-red-light/20 hover:border-red-light p-4'>
                                             {step.stepDescriptionComponent}
                                         </div>
                                     )}
@@ -55,7 +62,12 @@ export default function StepContainer({ stepData }) {
             <div className="flex flex-col gap-3 md:hidden">
                 {
                     stepData.map((step, index) => {
-                        const isEven = index % 2 === 0;
+                        const isReverseFlow = () => {
+                            if (isReverse) {
+                                return index % 2 !== 0;
+                            }
+                            return index % 2 === 0;
+                        }
                         const isFirst = index === 0;
                         const isLast = index === stepData.length - 1;
                         return (
