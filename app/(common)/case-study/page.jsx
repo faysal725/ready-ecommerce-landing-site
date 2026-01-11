@@ -14,6 +14,7 @@ import ButtonIconLargeWhite from "@/components/Button/ButtonIconLargeWhite";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import ButtonIconLargeWhiteOutline from "@/components/Button/ButtonIconLargeWhiteOutline";
 import SolutionSection from "@/components/Sections/SolutionSection";
+import InterfaceDecisionSection from "@/components/Sections/InterfaceDecisionSection";
 
 function HeadingSection() {
   return (
@@ -93,10 +94,8 @@ export default function CaseStudy() {
       {/* solution section */}
       <SolutionSection />
 
-      {/* built section */}
-      <BuiltSection />
-
-
+      {/* design & ux decision */}
+      <InterfaceDecisionSection />
 
       <CTASection
         heading="Ready to Build Your Own eCommerce Platform?"

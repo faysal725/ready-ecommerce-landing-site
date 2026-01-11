@@ -1,14 +1,9 @@
-'use client'
-
 
 import ButtonIconSmall from "../Button/ButtonIconSmall";
 import ButtonLarge from "../Button/ButtonLarge";
 import Heading from "../Common/Heading";
 import SectionContainer from "../Common/SectionContainer";
 import GradientContainer from "../Containers/GradientContainer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Link from "next/link";
 import GradientBorderWrapper from "../wrapper/GradientBorderWrapper";
 
@@ -136,7 +131,7 @@ export default function SolutionSection() {
                     />
                 }
                 mainComponent={<AllServices />}
-                backgroundColorClass="!py-[50px]"
+                backgroundColorClass="!pt-[50px]"
             />
         </>
     );
