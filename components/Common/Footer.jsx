@@ -41,27 +41,47 @@ export default function Footer() {
                                 <ul className='flex flex-col gap-[15px]'>
                                     <li>
                                         <Link href={'#'} className="text-base text-white/60">
-                                            Features
+                                            Ready eCommerce
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href={'#'} className="text-base text-white/60">
-                                            Pricing
+                                            Ready Grocery
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href={'#'} className="text-base text-white/60">
-                                            Integrations
+                                            Ready Ride 
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href={'#'} className="text-base text-white/60">
-                                            Demo
+                                            Ready LMS
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href={'#'} className="text-base text-white/60">
-                                            FAQ
+                                            AliCom
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={'#'} className="text-base text-white/60">
+                                            Ready Laundry 
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={'#'} className="text-base text-white/60">
+                                            Best Laundry 
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={'#'} className="text-base text-white/60">
+                                            Maditam
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={'#'} className="text-base text-white/60">
+                                            Rentdo
                                         </Link>
                                     </li>
                                 </ul>

@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import clsx from 'clsx'
 import styles from "./Sidepanel.module.css"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Transition } from "@headlessui/react";
+import { useScrollTo } from "@/app/hooks/useScrollTo";
 
 export default function Sidepanel() {
 
@@ -22,20 +23,21 @@ export default function Sidepanel() {
         },
         pricing: {
             links: [
-                { title: 'Setup & Publication', href: '#' },
-                { title: 'Custom Software', href: '/blogs' },
-                { title: 'Regular & Extended License', href: '#' },
-                { title: 'Customization', href: '#' },
+                { title: 'Setup & Publication', href: '/packages' },
+                { title: 'Services', href: '/services' },
+                { title: 'Regular & Extended License', href: '/pricing' },
+                { title: 'Customization', href: '/customization' },
                 { title: 'Development Products', href: '#' },
             ]
         },
         helpNSupport: {
             links: [
-                { title: 'Setup Documentation', href: '#' },
-                { title: 'About Us', href: '#' },
-                { title: 'Contact Us', href: '#' },
-                { title: 'Create Ticket', href: '#' },
-                { title: 'Blogs', href: '/blogs' },
+                { title: 'Create Ticket', href: 'https://razinsoft.com/dashboard/support' },
+                { title: 'Installation Document', href: 'https://readyecommerce.app/docs/' },
+                { title: 'Case Study', href: '/case-study' },
+                { title: 'Blogs', href: 'https://razinsoft.com/blogs' },
+                { title: 'About Us', href: '/about-us' },
+                { title: 'Contact Us', href: 'https://razinsoft.com/contact-us' },
             ]
         },
     }
@@ -45,6 +47,8 @@ export default function Sidepanel() {
     const currentPath = usePathname();
     const [showMenuBar, setShowMenuBar] = useState(false);
     const [activeSection, setActiveSection] = useState('')
+    const { scrollToSection } = useScrollTo();
+    const router = useRouter()
 
 
     // path style handler
@@ -119,12 +123,17 @@ export default function Sidepanel() {
 
                             <SubSection shouldExpand={activeSection === 'pricing'} title={'pricing'} allLinks={sectionLinks['pricing']} setActiveSection={setActiveSection} />
                         </div>
-                        <Link href="/"
-                            className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/services')}>services</Link>
-                        <Link href="/"
-                            className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/demo')}>demo</Link>
-                        
-                        
+                        {/* <Link href="/"
+                            className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/services')}>services</Link> */}
+                        <div onClick={() => {
+                            router.push('/')
+                            setTimeout(() => {
+                                scrollToSection('onlineBusiness')
+                            }, 1000);
+                        }}
+                            className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline}>demo</div>
+
+
                         <div className="flex flex-col items-center">
                             <button onClick={() => expandSection('helpNSupport')}
                                 className={clsx("text-base font-medium text-center text-primary-black hover_underline capitalize w-fit", isCurrentSection('helpNSupport'))}>Help & Support</button>

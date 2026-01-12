@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import styles from "./Navbar.module.css"
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ArrowRightIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Transition } from '@headlessui/react'
@@ -33,9 +33,9 @@ function FeatureMenu() {
                         <p className="text-base   text-[#2b2424]">Super Admin Panel</p>
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Control everything with real-time system insights and analytics.</p>
 
-                            <ButtonIconSmall name="Explore">
-                                <img src="/icons/menu/play.svg" alt="" className="w-4 h-4" />
-                            </ButtonIconSmall>
+                        <ButtonIconSmall name="Explore">
+                            <img src="/icons/menu/play.svg" alt="" className="w-4 h-4" />
+                        </ButtonIconSmall>
 
                     </div>
                 </Link>
@@ -224,7 +224,7 @@ function PricingMenu() {
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Flexible customization options to adapt design, features, and workflow to your business needs.</p>
 
 
-                        <div  className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
+                        <div className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
                             <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">Customize</p>
                             <ArrowRightIcon className="w-4 h-4 text-white group-hover:text-primary-red" />
                         </div>
@@ -324,6 +324,7 @@ export default function NavLinks() {
     const [open, setOpen] = useState(false)
     const [currentMenu, setCurrentMenu] = useState('')
     const { scrollToSection } = useScrollTo();
+    const router = useRouter()
 
     const currentMenuUnderlineClasses = "after:absolute after:w-full after:h-[3.5px] after:bg-primary-red after:bottom-0 after:rounded-tl-[5px] after:rounded-tr-[5px] after:opacity-0 after:opacity-100"
 
@@ -406,7 +407,12 @@ export default function NavLinks() {
                 setCurrentMenu('')
             }} className=" inline-flex justify-center items-center gap-1 h-[88px] ">
                 <div
-                    onClick={() => scrollToSection('onlineBusiness')}
+                    onClick={() => {
+                        router.push('/')
+                        setTimeout(() => {
+                            scrollToSection('onlineBusiness')
+                        }, 1000);
+                    }}
                     className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/demo')}
 
                 >
