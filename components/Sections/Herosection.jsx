@@ -1,5 +1,6 @@
 import { PlayCircleIcon } from '@heroicons/react/24/outline'
 import React from 'react'
+import ExploreDemoSection from './ExploreDemoSection'
 
 export default function Herosection() {
     return (
@@ -20,12 +21,7 @@ export default function Herosection() {
                         Are you managing online stores and finding it challenging to keep everything efficient? Look no further.
                     </p>
 
-                    <button className='max-w-[228px] w-full h-14 relative overflow-hidden flex justify-center items-center gap-2.5 px-5 rounded-lg cursor-pointer transition-all duration-300 hover:scale-110 border border-white'>
-                        <PlayCircleIcon className="h-7 w-7 text-white" />
-                        <p className="text-base font-medium text-center text-white">
-                            Explore The Demo
-                        </p>
-                    </button>
+                    <ExploreDemoSection />
                 </div>
                 <div className='w-full h-full flex justify-center items-center relative z-10'>
                     <img src="/images/sections/herosection/heroImg.png" alt="" className='object-contain' />
