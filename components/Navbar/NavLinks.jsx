@@ -26,21 +26,18 @@ function FeatureMenu() {
             <div className="flex flex-col gap-6">
 
                 {/* card 1 */}
-                <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer max-h-[115px] overflow-hidden hover:max-h-full">
+                <Link href="/features" className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer max-h-[115px] overflow-hidden hover:max-h-full">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <div>
                         <p className="text-base   text-[#2b2424]">Super Admin Panel</p>
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Control everything with real-time system insights and analytics.</p>
 
-                        <Link href="/features">
                             <ButtonIconSmall name="Explore">
                                 <img src="/icons/menu/play.svg" alt="" className="w-4 h-4" />
                             </ButtonIconSmall>
 
-                        </Link>
-
                     </div>
-                </div>
+                </Link>
 
                 {/* card 2 */}
                 <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer max-h-[115px] overflow-hidden hover:max-h-full">
@@ -219,20 +216,20 @@ function PricingMenu() {
 
 
                 {/* card 4 */}
-                <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
+                <Link href="/customization" className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <div className="flex flex-col justify-between h-full ">
                         <p className="text-base  font-semibold text-[#2b2424]">Customization</p>
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Flexible customization options to adapt design, features, and workflow to your business needs.</p>
 
 
-                        <Link href="/customization" className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
+                        <div  className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
                             <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">Customize</p>
                             <ArrowRightIcon className="w-4 h-4 text-white group-hover:text-primary-red" />
-                        </Link>
+                        </div>
 
                     </div>
-                </div>
+                </Link>
 
 
             </div>

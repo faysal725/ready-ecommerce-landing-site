@@ -11,7 +11,7 @@ function InstallationSection() {
             HeadingComponent={
                 <Heading
                     headingText="Installation Service"
-                    subHeadingText="Purchase your CodeCanyon license first to unlock these setup plans."
+                    subHeadingText="Buy the license to enable installation and setup services short details"
                     varient="light"
                 />
             }

@@ -37,50 +37,76 @@ function FaqAccordion() {
                     defaultValue="item-1"
                 >
                     <AccordionItem value="item-1">
-                        <AccordionTrigger>1. How long does the installation take?</AccordionTrigger>
+                        <AccordionTrigger>1. Can I customize the Ready eCommerce solution after purchase?</AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Most installations are completed within 24 hours after we receive your credentials.
+                                Yes, you can customize the system after purchase. Our dedicated and expert team ensures smooth customization according to your needs at an affordable price. We aim to build a long-term relationship with our valued clients.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                        <AccordionTrigger>2. Which payment gateways are supported?</AccordionTrigger>
+                        <AccordionTrigger>2. If I buy the installation service, does it include the customization service?
+                        </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Demo
+                                No, the installation service is a limited feature and is fixed. Therefore, the customization service is not included in the installation service
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
-                        <AccordionTrigger>3. Can I customize the design?</AccordionTrigger>
+                        <AccordionTrigger>3. Is it possible to buy Ready eCommerce for my clients?</AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Demo
+
+                                Yes, you can. However, keep in mind that each license is for a single client. To serve multiple clients, you will need to purchase separate licenses for each one.
+
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
-                        <AccordionTrigger>4. Will I receive updates in the future?</AccordionTrigger>
+                        <AccordionTrigger>4. Which Ready eCommerce license is the best option for me?
+                        </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Demo
+
+                                At present, Ready eCommerce offers two licenses on CodeCanyon: the regular and extended licenses. Explore our pricing page to understand the distinctions between them.
+
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-5">
-                        <AccordionTrigger>5. Is technical knowledge required?</AccordionTrigger>
+                        <AccordionTrigger>
+                            5. Are you able to configure my Ready eCommerce Solution?
+                        </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Demo
+                                Absolutely! Feel free to browse through our installation page and select the installation service that best fits your requirements.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-6">
-                        <AccordionTrigger>6. Can I migrate from Shopify or WooCommerce?</AccordionTrigger>
+                        <AccordionTrigger>
+                            6. Am I able to modify my installation package?
+                        </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
                             <p>
-                                Demo
+                                Of course, you have the option. If you need to make any changes to your installation plan, simply reach out to our support team for assistance.
+
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-7">
+                        <AccordionTrigger>
+
+                            7. Does Ready eCommerce come with any documentation?
+
+                        </AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-sm lg:text-lg text-left text-white/60">
+                            <p>
+
+                                Yes, Ready eCommerce comes with comprehensive documentation, including detailed guides and instructions to help you set up the project.
+
+
                             </p>
                         </AccordionContent>
                     </AccordionItem>
