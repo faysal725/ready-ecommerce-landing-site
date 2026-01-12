@@ -27,7 +27,7 @@ export default function ImpactSection() {
                         >
                             <div className='p-6 bg-gradient-to-br from-primary-red from-[-40%] via-deep-navy via-[50%] to-primary-red to-[150%] rounded-3xl flex flex-col gap-6 h-full'>
                                 <p className="text-base md:text-[22px] font-bold text-center text-primary-red">{impact.title}</p>
-                                <p class="text-sm md:text-lg text-center text-white/70">{impact.description}</p>
+                                <p className="text-sm md:text-lg text-center text-white/70">{impact.description}</p>
                             </div>
                         </GradientBorderWrapper>
                     ))
