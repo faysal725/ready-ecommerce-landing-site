@@ -53,7 +53,7 @@ export default function BehindStorySection() {
                         <p className="text-xl md:text-[28px] italic text-start md:text-center font-medium text-primary-black my-4 md:mt-6 md:mb-5 font-['poppins']">
                             We believe in creating technology that empowers businesses to <br /> reach their full potential in the digital age.
                         </p>
-                        <p class="text-lg text-start md:text-center text-[#626262]/60 font-['poppins']">— Founding Team</p>
+                        <p className="text-lg text-start md:text-center text-[#626262]/60 font-['poppins']">— Founding Team</p>
                     </div>
                 </div>
             }

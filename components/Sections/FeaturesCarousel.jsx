@@ -30,7 +30,6 @@ export default function FeaturesCarousel() {
         speed: 500,
         rtl: false,
         afterChange: (current) => {
-            console.log(current)
             setCurrentSlide(current)
         },
         responsive: [

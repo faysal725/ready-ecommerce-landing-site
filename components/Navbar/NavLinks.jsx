@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ArrowRightIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Transition } from '@headlessui/react'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonIconSmall from "../Button/ButtonIconSmall";
 import clsx from "clsx";
 
@@ -314,6 +314,15 @@ export default function NavLinks() {
     function isCurrentPath(pathName) {
         return currentPath === pathName ? styles.select_underline : '';
     }
+
+
+
+
+
+    useEffect(() => {
+        setOpen(false)
+        setCurrentMenu('')
+    }, [currentPath])
     return (
         <div onMouseLeave={() => {
             setOpen(false)
