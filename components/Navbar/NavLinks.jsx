@@ -144,40 +144,40 @@ function PricingMenu() {
             <div className="grid grid-cols-3 gap-6">
 
                 {/* card 1 */}
-                <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
+                <Link href="/packages" className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <div className="flex flex-col justify-between h-full ">
                         <p className="text-base  font-semibold text-[#2b2424]">Setup & Publication</p>
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Expert guides and tools for seamless laaunch.</p>
 
 
-                        <Link href="/pricing"
+                        <div
                             className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white "
                         >
                             <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">Get Started</p>
                             <ArrowRightIcon className="w-4 h-4 text-white group-hover:text-primary-red" />
-                        </Link>
+                        </div>
 
                     </div>
-                </div>
+                </Link>
 
 
                 {/* card 2 */}
-                <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
+                <Link href="/pricing" className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <div className="flex flex-col justify-between h-full ">
                         <p className="text-base  font-semibold text-[#2b2424]">Regular & Extended License</p>
                         <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Select Regular for single-use projects, or Extended if you plan to monetize or charge users.</p>
 
 
-                        <Link href="/packages" className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
+                        <div className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
 
                             <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">Choose License</p>
                             <ArrowRightIcon className="w-4 h-4 text-white group-hover:text-primary-red" />
-                        </Link>
+                        </div>
 
                     </div>
-                </div>
+                </Link>
 
 
                 <div className="row-span-2 bg-[url(/images/menu/pricing-bg.png)] bg-cover bg-no-repeat rounded-lg p-6 space-y-6">
@@ -364,7 +364,7 @@ export default function NavLinks() {
                     setCurrentMenu('features')
                 }}
 
-                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/features')}
+                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline }
                 >
                     features
                 </div>
@@ -378,7 +378,7 @@ export default function NavLinks() {
                     setCurrentMenu('pricing')
                 }}
 
-                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/pricing')}
+                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline}
                 >
                     Pricing & Services
                 </div>
@@ -428,7 +428,7 @@ export default function NavLinks() {
                     setCurrentMenu('help')
                 }}
 
-                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/help')}
+                    className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline}
                 >
                     Help & Support
                 </div>

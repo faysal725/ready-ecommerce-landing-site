@@ -1,3 +1,4 @@
+import { MapPinIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
 
@@ -18,11 +19,19 @@ export default function Footer() {
                             <div className='space-y-2.5'>
                                 <div className='flex justify-start items-center gap-3'>
                                     <img src="/icons/phone.svg" alt="" className='w-5 h-5' />
-                                    <p className='text-base  text-white'>+8801937203743</p>
+                                    <p className='text-base  text-white'>+880 1711257498</p>
                                 </div>
                                 <div className='flex justify-start items-center gap-3'>
                                     <img src="/icons/mail.svg" alt="" className='w-5 h-5' />
-                                    <p className='text-base  text-white'>support@razinsoft.com</p>
+                                    <p className='text-base  text-white'>info@razinsoft.com</p>
+                                </div>
+                                <div className='flex justify-start items-start gap-3'>
+                                    {/* <img src="/icons/mail.svg" alt="" className='w-5 h-5' /> */}
+                                    <div>
+                                        <MapPinIcon className='h-6 w-6 text-white' />
+                                    </div>
+                                    <p className='text-base  text-white'>1/1 (A & B), RMR Center, Adabor Bazar Road,
+                                        Mohammadpur, Dhaka - 1207, Bangladesh.</p>
                                 </div>
                             </div>
                             <div className='flex justify-start items-center gap-[15px]'>
@@ -40,47 +49,42 @@ export default function Footer() {
 
                                 <ul className='flex flex-col gap-[15px]'>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Ready eCommerce
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href={'#'} className="text-base text-white/60">
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
                                             Ready Grocery
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Ready Ride 
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
+                                            Ready Ride
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
                                             Ready LMS
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
                                             AliCom
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Ready Laundry 
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
+                                            Ready Laundry
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Best Laundry 
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
+                                            Best Laundry
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
                                             Maditam
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
+                                        <Link href="https://razinsoft.com/products" target="_blank" className="text-base text-white/60">
                                             Rentdo
                                         </Link>
                                     </li>
@@ -123,7 +127,7 @@ export default function Footer() {
                                 <ul className='flex flex-col gap-[15px]'>
                                     <li>
                                         <Link href="https://razinsoft.com/blogs" className="text-base text-white/60">
-                                            Blog 
+                                            Blog
                                         </Link>
                                     </li>
                                     <li>
@@ -143,22 +147,22 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <Link href="https://readyecommerce.app/docs/" className="text-base text-white/60">
-                                            Documents 
+                                            Documents
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="https://razinsoft.com/privacy-policy" className="text-base text-white/60">
-                                            Privacy Policy  
+                                            Privacy Policy
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="https://razinsoft.com/terms-and-conditions" className="text-base text-white/60">
-                                            Terms & Conditions  
+                                            Terms & Conditions
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="https://razinsoft.com/refund-policy" className="text-base text-white/60">
-                                            Refund & Services Policy 
+                                            Refund & Services Policy
                                         </Link>
                                     </li>
                                 </ul>

@@ -239,7 +239,7 @@ export default function AboutUs() {
 
 
       {/* consultation form */}
-      <ConsultationSection2 headingText="Let's Start a Conversation" subHeadingText="Have a question or want to work together? We'd love to hear from you." />
+      {/* <ConsultationSection2 headingText="Let's Start a Conversation" subHeadingText="Have a question or want to work together? We'd love to hear from you." /> */}
 
 
 
