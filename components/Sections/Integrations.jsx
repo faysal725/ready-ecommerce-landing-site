@@ -59,9 +59,9 @@ function PaymentsSection() {
                     }
                 </div>
 
-                <p className="text-base lg:text-xl text-center text-[#9a9a9a]">
+                {/* <p className="text-base lg:text-xl text-center text-[#9a9a9a]">
                     + More integrations available on request
-                </p>
+                </p> */}
             </div>
         </section>
     )

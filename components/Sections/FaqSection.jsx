@@ -14,6 +14,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import Link from "next/link";
 
 
 
@@ -132,15 +133,16 @@ function ContentSection() {
                 </div>
 
                 <div className="my-6 md:mt-10 md:mb-[30px]">
-                    <VideoPlayer videoThumbnailSrc="https://i.ibb.co.com/Z1YPJ3v9/Frame-1261153635.png" videoSrc="https://www.w3schools.com/html/mov_bbb.mp4" videoType="video/mp4" />
+                    {/* <VideoPlayer videoThumbnailSrc="https://i.ibb.co.com/Z1YPJ3v9/Frame-1261153635.png" videoSrc="https://www.w3schools.com/html/mov_bbb.mp4" videoType="video/mp4" /> */}
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/vzs6UpA6MRQ?si=-50_Ef5UYxw4pko1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
 
-                <a href="#" className="h-14 w-full relative flex justify-center items-center gap-2.5 px-5 py-3.5 rounded-lg bg-white/[0.03] border border-white/10">
+                <Link href="https://www.youtube.com/@razinsoft" target="_blank" className="h-14 w-full relative flex justify-center items-center gap-2.5 px-5 py-3.5 rounded-lg bg-white/[0.03] border border-white/10">
                     <PlayCircleIcon className="h-6 w-6 text-white" />
                     <p className="text-base font-medium text-center text-white">
                         Watch Video Tutorials
                     </p>
-                </a>
+                </Link>
             </div>
             <div className="w-full lg:max-w-[600px]">
                 <FaqAccordion />

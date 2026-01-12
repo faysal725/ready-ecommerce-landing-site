@@ -200,20 +200,20 @@ function PricingMenu() {
 
 
                 {/* card 3 */}
-                <div className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
+                <Link href="/services" className=" w-full  p-4 rounded-xl border-[1.3px] border-[#e9ecef]/60 flex items-start gap-[15px] group transition-all duration-500 hover:bg-[#fff4f7] cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <div className="flex flex-col justify-between h-full ">
-                        <p className="text-base  font-semibold text-[#2b2424]">Custom Software</p>
-                        <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">Access to a dedicated customer portal with resources, updates, and support tools.</p>
+                        <p className="text-base  font-semibold text-[#2b2424]">Services</p>
+                        <p className="text-sm  text-[#2b2424]/60 pb-4 pt-1.5">We design and develop custom eCommerce software tailored to your exact business model.</p>
 
 
                         <button className="h-10 w-fit relative overflow-hidden gap-[5px] cursor-pointer rounded-lg flex justify-center items-center px-4 bg-gradient-to-br from-primary-red to-pink-600 border border-primary-red transition-all duration-200 group-hover:from-white group-hover:to-white ">
-                            <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">Request a Quote</p>
+                            <p className="text-xs font-medium text-center transition-all duration-200 text-white group-hover:text-primary-red">View Detals</p>
                             <ArrowRightIcon className="w-4 h-4 text-white group-hover:text-primary-red" />
                         </button>
 
                     </div>
-                </div>
+                </Link>
 
 
                 {/* card 4 */}
@@ -249,9 +249,38 @@ function HelpMenu() {
             <div className="w-[361px] rounded-bl-2xl rounded-br-2xl p-6 shadow-2xl   transition-all duration-500 flex flex-col gap-4 bg-white">
 
                 {/* card 1 */}
-                <Link href="https://demo.readyecommerce.app/admin" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                {/* <Link href="https://demo.readyecommerce.app/admin" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
                     <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
                     <p className="text-base font-medium text-left text-[#24262d]">Super Admin Panel</p>
+                </Link> */}
+
+
+                {/* card 4 */}
+                <Link href="https://razinsoft.com/dashboard/support" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
+                    <p className="text-base font-medium text-left text-[#24262d]">Create Ticket</p>
+                </Link>
+
+                {/* card 4 */}
+                <Link href="https://readyecommerce.app/docs/" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
+                    <p className="text-base font-medium text-left text-[#24262d]">Installation Document</p>
+                </Link>
+
+
+
+
+                {/* card 4 */}
+                <Link href="/case-study" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
+                    <p className="text-base font-medium text-left text-[#24262d]">Case Study</p>
+                </Link>
+
+
+                {/* card 4 */}
+                <Link href="https://razinsoft.com/blogs" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
+                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
+                    <p className="text-base font-medium text-left text-[#24262d]">Blog</p>
                 </Link>
 
                 {/* card 2 */}
@@ -268,18 +297,6 @@ function HelpMenu() {
                 </Link>
 
 
-                {/* card 4 */}
-                <Link href="https://razinsoft.com/dashboard/support" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
-                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
-                    <p className="text-base font-medium text-left text-[#24262d]">Create Ticket</p>
-                </Link>
-
-
-                {/* card 4 */}
-                <Link href="https://razinsoft.com/blogs" target="_blank" className="p-4 flex justify-start items-center gap-[15px] rounded-xl transition-all duration-200 hover:bg-[#fff4f7] border-[1.3px] border-[#e9ecef]/60 cursor-pointer">
-                    <img src="/icons/menu/admin.svg" alt="" className="w-7 h-7" />
-                    <p className="text-base font-medium text-left text-[#24262d]">Blog</p>
-                </Link>
 
 
             </div>
@@ -362,14 +379,14 @@ export default function NavLinks() {
 
                     className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/pricing')}
                 >
-                    Pricing
+                    Pricing & Services
                 </div>
             </div>
 
 
 
             {/* services */}
-            <div onMouseLeave={() => {
+            {/* <div onMouseLeave={() => {
                 setOpen(false)
                 setCurrentMenu('')
             }}
@@ -381,7 +398,7 @@ export default function NavLinks() {
                 >
                     services
                 </Link>
-            </div>
+            </div> */}
 
             {/* demo */}
             <div onMouseLeave={() => {

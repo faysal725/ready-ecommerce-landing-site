@@ -29,14 +29,14 @@ export default function Footer() {
                                 <div className='h-[52px] w-[162px] gap-4 px-3 py-2 rounded-xl  border border-white/20 cursor-pointer'>
                                     <img src="/images/footer/codecanyon.png" alt="" className='object-contain h-full w-full' />
                                 </div>
-                                <div className='h-[52px] w-[162px] gap-4 px-3 py-2 rounded-xl  border border-white/20 cursor-pointer'>
+                                <Link href="https://razinsoft.com/" target="_blank" className='h-[52px] w-[162px] gap-4 px-3 py-2 rounded-xl  border border-white/20 cursor-pointer'>
                                     <img src="/images/footer/razinsoft.png" alt="" className='object-contain h-full w-full' />
-                                </div>
+                                </Link>
                             </div>
                         </div>
                         <div className='w-full md:w-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:gap-[60px]'>
                             <div>
-                                <p className="text-lg font-medium text-white pb-6">Quick Links</p>
+                                <p className="text-lg font-medium text-white pb-6">Our Top Products</p>
 
                                 <ul className='flex flex-col gap-[15px]'>
                                     <li>
@@ -102,23 +102,43 @@ export default function Footer() {
 
                                 <ul className='flex flex-col gap-[15px]'>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            About
+                                        <Link href="https://razinsoft.com/blogs" className="text-base text-white/60">
+                                            Blog 
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Contact
+                                        <Link href="/about-us" className="text-base text-white/60">
+                                            About Us
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Terms
+                                        <Link href="https://razinsoft.com/contact-us" className="text-base text-white/60">
+                                            Contact Us
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={'#'} className="text-base text-white/60">
-                                            Privacy
+                                        <Link href="/case-study" className="text-base text-white/60">
+                                            Case Studies
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://readyecommerce.app/docs/" className="text-base text-white/60">
+                                            Documents 
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://razinsoft.com/privacy-policy" className="text-base text-white/60">
+                                            Privacy Policy  
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://razinsoft.com/terms-and-conditions" className="text-base text-white/60">
+                                            Terms & Conditions  
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://razinsoft.com/refund-policy" className="text-base text-white/60">
+                                            Refund & Services Policy 
                                         </Link>
                                     </li>
                                 </ul>
@@ -128,7 +148,7 @@ export default function Footer() {
 
                     <div className='flex flex-col md:flex-row justify-between items-center gap-3'>
                         <p className="text-base text-white/60">
-                            © {new Date().getFullYear()} All rights reserved. Developed by Razinsoft
+                            © {new Date().getFullYear()} All rights reserved. Developed by <Link href="https://razinsoft.com/" className='underline text-white' target="_blank">Razinsoft</Link>
                         </p>
 
                         <div className='flex justify-start items-center gap-3'>

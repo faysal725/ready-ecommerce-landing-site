@@ -18,7 +18,7 @@ export default function TestimonialCards({ testimonialData }) {
                         <img src="/icons/starIcon.svg" alt="" className="w-[15px] h-[15px]" />
                     </div>
 
-                    <p className="text-base text-white/60">
+                    <p className="text-base text-white/60 line-clamp-6">
                         {testimonialData.review}
                     </p>
 

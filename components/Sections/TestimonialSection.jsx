@@ -28,38 +28,41 @@ function Testimonials() {
     const testimonialData = [
         {
             rating: 5,
-            review: "The white-label solution gave us complete control. Our marketplace looks and feels 100% custom.",
+            review: "Great Product & Support!\r\nI’m very happy with this eCommerce script. Everything works perfectly, and the features are just what I needed. The support team is amazing—quick and very helpful. Highly recommended!"
+            ,
             user: {
-                name: "Mikel D.",
-                position: "CEO, eCommerzhub",
-                image: "/images/sections/testimonial/user1.png"
+                name: "Kevin King",
+                position: "createnet.co.uk",
+                image: "https://admin.razinsoft.com/storage/testimonial/image/nx8qkLDHNUqP9463ZpSaibDvEkBZlNnlcgbMFhgN.png"
             }
         },
         {
             rating: 5,
-            review: "Within 3 months, we scaled from 10 to 500 vendors. The platform handles everything seamlessly.",
+            review: "Absolutely Fantastic Product & Support!\r\nSuper happy with this eCommerce script — smooth UX, powerful features, and top-notch support 🚀🙌\r\nHighly recommended!"
+            ,
             user: {
-                name: "Mikel D.",
-                position: "CEO, eCommerzhub",
-                image: "/images/sections/testimonial/user2.png"
+                name: "Dhulfiqar Ali",
+                position: "sswholesale.com.au",
+                image: "https://admin.razinsoft.com/storage/testimonial/image/EJ7AcjDkZPkoGUqBWpArD1d6aUyNhHA4DRZrUrm0.png"
             }
         },
         {
             rating: 5,
-            review: "This platform transformed our marketplace. Sales increased by 300% in just 3 months!",
+            review: "The code structure is good and got a very kindly professional support. Keep the good work and go ahead.",
             user: {
-                name: "Mikel D.",
-                position: "CEO, eCommerzhub",
-                image: "/images/sections/testimonial/user3.png"
+                name: "Michael Thompson"
+                ,
+                position: "Techspire Solutions",
+                image: "https://admin.razinsoft.com/storage/testimonial/image/tYhohJ74T1FpNkfcixTXOn5i7kyt3iE21LKkqI1n.jpg"
             }
         },
         {
             rating: 5,
-            review: "Best investment we made for our marketplace. The support team is exceptional and the features are top-notch.",
+            review: "The Ready eCommerce Seller App Addon by Razinsoft is a great tool for managing vendors and stores. It's user-friendly and integrates seamlessly with the main platform, making tasks like order and inventory management much easier. Highly recommend.",
             user: {
-                name: "Mikel D.",
-                position: "CEO, eCommerzhub",
-                image: "/images/sections/testimonial/user4.png"
+                name: "Gabriel Martins",
+                position: "Foldz Solution",
+                image: "https://admin.razinsoft.com/storage/testimonial/image/SeaOCqySryVm2T9BoW3i2PbPnSQKTKvlVpjKAvtx.jpg"
             }
         },
     ]
