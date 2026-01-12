@@ -45,6 +45,7 @@ export default function InputFile({
                 <input
                     ref={fileInputRef}
                     id={label}
+                    name={label}
                     type="file"
                     className="hidden"
                     accept="image/png, image/jpeg .pdf, .doc, .docx, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
