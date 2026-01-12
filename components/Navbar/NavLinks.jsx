@@ -9,6 +9,7 @@ import { Transition } from '@headlessui/react'
 import { useEffect, useState } from "react";
 import ButtonIconSmall from "../Button/ButtonIconSmall";
 import clsx from "clsx";
+import { useScrollTo } from "@/app/hooks/useScrollTo";
 
 
 function changeRoute(link) {
@@ -305,15 +306,13 @@ export default function NavLinks() {
     const currentPath = usePathname();
     const [open, setOpen] = useState(false)
     const [currentMenu, setCurrentMenu] = useState('')
+    const { scrollToSection } = useScrollTo();
 
     const currentMenuUnderlineClasses = "after:absolute after:w-full after:h-[3.5px] after:bg-primary-red after:bottom-0 after:rounded-tl-[5px] after:rounded-tr-[5px] after:opacity-0 after:opacity-100"
 
     function isCurrentPath(pathName) {
         return currentPath === pathName ? styles.select_underline : '';
     }
-
-
-
 
 
     useEffect(() => {
@@ -384,19 +383,18 @@ export default function NavLinks() {
                 </Link>
             </div>
 
-
             {/* demo */}
             <div onMouseLeave={() => {
                 setOpen(false)
                 setCurrentMenu('')
             }} className=" inline-flex justify-center items-center gap-1 h-[88px] ">
-                <Link
-                    href="#onlineBusiness"
+                <div
+                    onClick={() => scrollToSection('onlineBusiness')}
                     className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/demo')}
 
                 >
                     demo
-                </Link>
+                </div>
             </div>
 
 
