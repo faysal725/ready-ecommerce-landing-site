@@ -17,6 +17,9 @@ import SolutionSection from "@/components/Sections/SolutionSection";
 import InterfaceDecisionSection from "@/components/Sections/InterfaceDecisionSection";
 import TechnologySection from "@/components/Sections/TechnologySection";
 import ImpactSection from "@/components/Sections/ImpactSection";
+import ProblemSection from "@/components/Sections/ProblemSection";
+import { Fragment } from "react";
+import clsx from "clsx";
 
 function HeadingSection() {
   return (
@@ -48,7 +51,62 @@ function HeadingSection() {
   )
 }
 
+function SoftwareSolutionSection() {
+  const servicesData = [
+    {
+      name: "Admin Panel",
+      description: "Manage products, orders, users, and reports.",
+      imageSrc: "/icons/sections/onlineBusiness/panel.svg"
+    },
+    {
+      name: "User App",
+      description: "Browse, order, pay, and track deliveries easily.",
+      imageSrc: "/icons/sections/onlineBusiness/user-app.svg"
+    },
+    {
+      name: "Seller App",
+      description: "Handle sales and orders on the go.",
+      imageSrc: "/icons/sections/onlineBusiness/seller-app.svg"
+    },
+    {
+      name: "Delivery App",
+      description: "Accept orders, navigate, and update delivery status.",
+      imageSrc: "/icons/sections/onlineBusiness/delivery.svg"
+    },
+    {
+      name: "Website",
+      description: "Shop online, place orders, and track purchases.",
+      imageSrc: "/icons/sections/onlineBusiness/link.svg"
+    },
+  ]
+  return (
+    <section className="relative z-10 lg:pt-6">
+      <div className="container mx-auto ">
+        <div className="p-0 lg:p-6 pt-14 lg:pt-16 rounded-2xl lg:-mt-28 lg:border flex justify-center lg:justify-between items-center flex-wrap lg:flex-nowrap gap-4 gap-y-10 lg:gap-0 lg:shadow-xl shadow-red-light bg-white">
+          {
+            servicesData.map((service, index) => {
+              const isFirst = index === 0
+              const isLast = index === servicesData.length - 1
 
+              return (
+                <Fragment key={index} >
+                  <div className="flex items-center flex-col justify-center gap-4 lg:flex-1 border border-[#f8d5de] rounded-xl min-w-[177px]">
+                    <div className={clsx("w-12 h-12 md:w-16 md:h-16 rounded-full flex justify-center items-center -mt-8", isFirst ? "bg-primary-red" : "bg-red-light ")}>
+                      <img src={service.imageSrc} alt="" className={clsx("w-6 h-6", isFirst && "opacity-100 brightness-0 invert")} />
+                    </div>
+                    <p className="text-base md:text-lg font-semibold text-center pb-2 md:pb-7">{service.name}</p>
+                  </div>
+                  <div className={clsx("w-7 h-0.5 bg-[#f8d5de] hidden", isLast ? "hidden" : "lg:block")}></div>
+                </Fragment>
+              )
+            }
+            )
+          }
+        </div>
+      </div>
+    </section>
+  )
+}
 
 function OurVisionSection() {
 
@@ -106,10 +164,14 @@ export default function CaseStudy() {
   ]
   return (
     <div>
-      <Herosection3 mainComponent={<HeadingSection />} additionalContainerClass="min-h-[746px]" />
+      <Herosection3 mainComponent={<HeadingSection />} additionalContainerClass="lg:min-h-[746px]" />
 
 
+      <SoftwareSolutionSection />
 
+
+      {/* The Problem We Identified */}
+      <ProblemSection />
 
       {/* our vision section */}
       <OurVisionSection />
