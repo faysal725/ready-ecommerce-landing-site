@@ -526,6 +526,7 @@ export default function OnlineBusinessSection() {
                 }
                 mainComponent={<AllServices />}
                 backgroundColorClass="bg-deep-navy"
+                sectionId="onlineBusiness"
             />
         </>
     );

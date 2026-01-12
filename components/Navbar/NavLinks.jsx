@@ -385,7 +385,7 @@ export default function NavLinks() {
                 setCurrentMenu('')
             }} className=" inline-flex justify-center items-center gap-1 h-[88px] ">
                 <Link
-                    href="/demo"
+                    href="#onlineBusiness"
                     className={"text-base font-medium text-center text-primary-black hover_underline " + styles.hover_underline + ' ' + isCurrentPath('/demo')}
 
                 >

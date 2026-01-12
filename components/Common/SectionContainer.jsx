@@ -1,8 +1,8 @@
 
 
-export default function SectionContainer({HeadingComponent, mainComponent, backgroundColorClass}) {
+export default function SectionContainer({HeadingComponent, mainComponent, backgroundColorClass, sectionId}) {
     return (
-        <section className={ backgroundColorClass + " py-6 md:py-[100px] overflow-hidden"}>
+        <section className={ backgroundColorClass + " py-6 md:py-[100px] overflow-hidden"} id={sectionId}>
             <div className="container flex flex-col gap-6 lg:gap-[60px] items-center">
                 {
                     HeadingComponent && HeadingComponent
