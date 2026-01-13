@@ -45,11 +45,13 @@ export default function InputPhone(
     const [open, setOpen] = useState(false)
     const [id, setId] = useState("")
     const [currentCode, setCurrentCode] = useState("+000")
+    const [currentCountryId, setCurrentCountryId] = useState("")
     return (
 
         <div className="relative w-full flex flex-col justify-between">
             <div className="block"
             >
+
                 <span className="text-sm sm:text-base font-medium text-start text-[#0d1a29] capitalize">{title}</span>
                 {
                     required &&
@@ -97,10 +99,11 @@ export default function InputPhone(
                                             key={country.id}
                                             value={`${country.name} ${country.phone_code}`}
                                             onSelect={(currentId) => {
-                                                setId(currentId === id ? "" : currentId)
+                                                setCurrentCountryId(currentId === id ? "" : country.id)
+                                                setId(currentId === id ? "+000" : currentId)
                                                 setOpen(false)
-                                                onCountryChange(currentId === id ? "" : country.id)
-                                                setCurrentCode(currentId === id ? "" : country.phone_code)
+                                                // onCountryChange(currentId === id ? "+000" : country.id)
+                                                setCurrentCode(currentId === id ? "+000" : country.phone_code)
                                             }}
                                         >
                                             <img src={country.flag} alt="" className='h-5 w-7 object-cover' />
@@ -121,8 +124,9 @@ export default function InputPhone(
 
                 <div className=' bg-white/10   rounded-xl 
                                     rounded-l-none w-full h-full flex justify-start'>
-                    <input type="text" className='w-16 h-full pl-3 placeholder:text-xs sm:placeholder:text-base disabled:text-gray-500' value={currentCode} disabled/>
-                    <input type="text" onChange={(e) => onPhoneNumberChange(e.target.value)} className='w-full h-full placeholder:text-xs sm:placeholder:text-base outline-red-light outline-none' />
+                    <input type="hidden" className='w-8 h-full' name="country_id" value={currentCountryId} onChange={e => setCurrentCountryId(e.target.value)}/>
+                    <input type="text" className='w-16 h-full pl-3 placeholder:text-xs sm:placeholder:text-base disabled:text-gray-500' value={currentCode} disabled />
+                    <input type="text" name="phone" className='w-full h-full placeholder:text-xs sm:placeholder:text-base outline-red-light outline-none' />
                 </div>
             </div>
             {

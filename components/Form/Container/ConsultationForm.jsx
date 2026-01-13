@@ -1,6 +1,5 @@
-'use client'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import InputText from '../InputText'
 import Dropdown from '../Dropdown'
 import Textarea from '../Textarea'
@@ -10,8 +9,9 @@ import InputFile from '../InputFile'
 import ButtonLarge from '@/components/Button/ButtonLarge'
 import { fullBaseUrl } from '@/lib/exportVariables'
 import crud from '@/lib/axios'
-import ReCaptcha from '../ReCaptcha'
+// import ReCaptcha from '../ReCaptcha'
 import { ToastContainer, toast } from 'react-toastify';
+import BusinessTypeDropdownSection from '@/components/Sections/BusinessTypeDropdownSection'
 
 
 export default function ConsultationForm({ countryOption }) {
@@ -20,103 +20,49 @@ export default function ConsultationForm({ countryOption }) {
   const businessTypeApi = fullBaseUrl() + '/business-types'
   const userDataApi = fullBaseUrl() + '/contact-user-data-store'
 
-  // state
-  const [businessTypeOptions, setBusinessTypeOptions] = useState([])
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    business_type: '',
-    country_id: '',
-    message: '',
-    attachment: [],
-  })
-
-  const [loading, setLoading] = useState(false)
 
 
-
-  async function getBusinessTypeOptions() {
-    try {
-      const res = await crud.get(businessTypeApi);
-      // console.log(res.data.data)
-      setBusinessTypeOptions(res.data.data)
-      // return res.data; 
-    } catch (err) {
-      // toast.error(err.response?.data?.message || "Login failed");
-      // return rejectWithValue(err.response.data);
-    }
-  }
 
 
 
 
   // need to change future badly
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    const form = e.currentTarget;
-    const consultFormData = new FormData(form);
-    console.log("attachmet:", consultFormData.get("requirements"));
+  async function submitForm(formData) {
+    'use server'
 
+    // console.log(countryOption, 'asdfasdfsdf')
 
-    setLoading(true)
-
-    try {
-      const submitData = new FormData()
-      submitData.append('name', formData.name)
-      submitData.append('email', formData.email)
-      submitData.append('phone', formData.phone)
-      submitData.append('business_type', consultFormData.get("business_type"))
-      submitData.append('country_id', formData.country_id)
-      submitData.append('message', formData.message)
-
-      
-      
-      if (formData.attachment) {
-        console.log(formData.attachment)
-        submitData.append('attachment[]', consultFormData.get("requirements"))
-        console.log(submitData)
-      }
-
-      // console.log(submitData)
-      const res = await crud.post(userDataApi, submitData, {
-        headers: {
-          'Accept': "application/json",
-        },
-      })
-
-      console.log('Success:', res.data)
-
-      toast.success(res.data.message);
-      // optional: reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        business_type: '',
-        country_id: '',
-        message: '',
-        attachment: [],
-      })
-
-    } catch (error) {
-      console.log('Submit error:', error.response?.data || error.message)
-      toast.error(error.response?.data.message );
-    } finally {
-      setLoading(false)
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      country_id: formData.get('country_id'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
     }
+
+    // 👉 Call your API here
+    // const res = await fetch('https://example.com/api/contact', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(data),
+    //   cache: 'no-store',
+    // })
+
+    // if (!res.ok) {
+    //   throw new Error('Failed to submit form')
+    // }
+
+    // const result = await res.json()
+    console.log(data)
   }
 
 
 
-  useEffect(() => {
-    getBusinessTypeOptions();
-  }, [])
-
 
   return (
-    <form onSubmit={handleSubmit} className='w-full h-fit rounded-xl bg-white border border-white/20 p-4 md:p-6 relative z-10'>
+    <form action={submitForm} className='w-full h-fit rounded-xl bg-white border border-white/20 p-4 md:p-6 relative z-10'>
       <p
         className=" text-lg font-semibold text-left text-primary-red"
       >
@@ -130,18 +76,11 @@ export default function ConsultationForm({ countryOption }) {
           title="Full Name"
           type="text"
           required={true}
-          onChange={(e) =>
-            setFormData({ ...formData, name: e.target.value })
-          }
-          placeholder="name"
+          placeholder="Name"
         />
         <InputPhone
           title="Phone Number"
-          onCountryChange={(id) => setFormData({ ...formData, country_id: id })}
           countryOption={countryOption.countries}
-          onPhoneNumberChange={(phone) =>
-            setFormData({ ...formData, phone: phone })
-          }
           phoneLabel="Phone Number"
         />
         <InputText
@@ -149,26 +88,18 @@ export default function ConsultationForm({ countryOption }) {
           title="Email Address"
           type="email"
           required={true}
-          onChange={(e) =>
-            setFormData({ ...formData, email: e.target.value })
-          }
           placeholder="example@email.com"
         />
-        <Dropdown
+        {/* <Dropdown
           label="business_type"
           title="Business Type"
           options={businessTypeOptions}
-          onChange={(e) =>
-            setFormData({ ...formData, business_type: e.target.value })
-          }
-        />
+        /> */}
+        <BusinessTypeDropdownSection />
         <Textarea
           label="message"
           title="Your Message"
           placeholder="Write something..."
-          onChange={(e) =>
-            setFormData({ ...formData, message: e.target.value })
-          }
           required
         />
 
@@ -176,9 +107,6 @@ export default function ConsultationForm({ countryOption }) {
           label="requirements"
           title="Upload Requirements (Optional)"
           accept="image/png, image/jpeg"
-          onChange={(file) =>
-            setFormData({ ...formData, attachment: file })
-          }
         />
 
         {/* <ReCaptcha /> */}
