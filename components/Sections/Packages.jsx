@@ -38,7 +38,7 @@ export default function Packages() {
 
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
                     <ButtonIconLarge name="Request To Buy" additionalClass="w-full">
 
                         <ArrowRightIcon className="h-5 w-5 text-white" />
@@ -68,7 +68,7 @@ export default function Packages() {
 
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
 
                     <ButtonIconLarge name="Request To Buy" additionalClass="w-full">
 
@@ -100,7 +100,7 @@ export default function Packages() {
 
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
                     <ButtonIconLargeWhite name="Request To Buy" additionalClass="w-full">
                         <ArrowRightIcon className="h-5 w-5 text-primary-red" />
                     </ButtonIconLargeWhite>

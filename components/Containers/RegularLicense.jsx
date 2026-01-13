@@ -42,7 +42,7 @@ export default function RegularLicense() {
                 </p>
             </div>
 
-            <Link href="#">
+            <Link href="https://wa.link/3om70h">
                 <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
                     <p className="text-base font-medium text-center text-primary-red">
                         Buy Regular License</p>

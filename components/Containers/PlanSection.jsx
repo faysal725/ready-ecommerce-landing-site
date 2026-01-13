@@ -56,7 +56,7 @@ export default function PlanSection() {
                     </p>
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
                     <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
                         <p className="text-base font-medium text-center text-primary-red">
                             Request To Buy</p>
@@ -116,7 +116,7 @@ export default function PlanSection() {
                     </p>
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
                     <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
                         <p className="text-base font-medium text-center text-primary-red">
                             Request To Buy</p>
@@ -159,7 +159,7 @@ export default function PlanSection() {
                     <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Deliveryman App all resource Manage, Configuration App and publish AppStore.</p>
                 </div>
 
-                <Link href="#">
+                <Link href="https://wa.link/3om70h">
                     <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg cursor-pointer bg-white">
                         <p className="text-base font-medium text-center text-primary-red">
                             Request To Buy</p>

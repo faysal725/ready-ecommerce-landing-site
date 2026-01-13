@@ -44,7 +44,7 @@ export default function ExtendedLicense() {
             </div>
 
 
-            <Link href="#">
+            <Link href="https://wa.link/3om70h">
                 <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg  bg-white  cursor-pointer">
                     <p className="text-base font-medium text-center text-primary-red">
                         Buy Extended License</p>
