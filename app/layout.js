@@ -2,6 +2,7 @@ import "./globals.css";
 import ReduxProvider from "@/store/providers";
 import { ToastContainer, toast } from 'react-toastify';
 import { Albert_Sans, Poppins, Roboto } from 'next/font/google'
+import WhatsApp from "@/components/Icons/WhatsApp";
 
 
 const albert_sans = Albert_Sans({
@@ -38,6 +39,9 @@ export default function RootLayout({ children }) {
           <ToastContainer />
           {children}
         </ReduxProvider>
+
+
+        <WhatsApp linkUrl="https://wa.link/3om70h"/>
       </body>
     </html>
   );
