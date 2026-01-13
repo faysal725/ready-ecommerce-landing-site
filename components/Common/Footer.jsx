@@ -185,7 +185,7 @@ export default function Footer() {
                             <a href="#" target='_blank' className='h-11 w-11 bg-white/10 flex justify-center items-center rounded-full'>
                                 <img src="/icons/socials/youtube.svg" alt="" className='w-[18px] h-[18px]' />
                             </a>
-                            <a href="#" target='_blank' className='h-11 w-11 bg-white/10 flex justify-center items-center rounded-full'>
+                            <a href="https://wa.link/3om70h" target='_blank' className='h-11 w-11 bg-white/10 flex justify-center items-center rounded-full'>
                                 <img src="/icons/socials/whatsapp2.svg" alt="" className='w-[18px] h-[18px]' />
                             </a>
                         </div>
