@@ -5,6 +5,7 @@ import ButtonIconLarge from '../Button/ButtonIconLarge'
 import ButtonIconLargeWhite from '../Button/ButtonIconLargeWhite'
 import Tick from '../Icons/Tick'
 import Cross from '../Icons/Cross'
+import Link from 'next/link'
 
 export default function Packages() {
     return (
@@ -37,10 +38,12 @@ export default function Packages() {
 
                 </div>
 
-                <ButtonIconLarge name="Buy Now" additionalClass="w-full">
+                <Link href="#">
+                    <ButtonIconLarge name="Request To Buy" additionalClass="w-full">
 
-                    <ArrowRightIcon className="h-5 w-5 text-white" />
-                </ButtonIconLarge>
+                        <ArrowRightIcon className="h-5 w-5 text-white" />
+                    </ButtonIconLarge>
+                </Link>
             </div>
 
 
@@ -65,10 +68,13 @@ export default function Packages() {
 
                 </div>
 
-                <ButtonIconLarge name="Buy Now" additionalClass="w-full">
+                <Link href="#">
 
-                    <ArrowRightIcon className="h-5 w-5 text-white" />
-                </ButtonIconLarge>
+                    <ButtonIconLarge name="Request To Buy" additionalClass="w-full">
+
+                        <ArrowRightIcon className="h-5 w-5 text-white" />
+                    </ButtonIconLarge>
+                </Link>
             </div>
 
 
@@ -94,10 +100,12 @@ export default function Packages() {
 
                 </div>
 
-                <ButtonIconLargeWhite name="Buy Now" additionalClass="w-full">
+                <Link href="#">
+                    <ButtonIconLargeWhite name="Request To Buy" additionalClass="w-full">
+                        <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                    </ButtonIconLargeWhite>
 
-                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-                </ButtonIconLargeWhite>
+                </Link>
             </div>
 
 
@@ -133,7 +141,7 @@ export default function Packages() {
                 <Tick />
             </div>
 
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -149,7 +157,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -197,7 +205,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -213,7 +221,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -229,7 +237,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -245,7 +253,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -262,7 +270,7 @@ export default function Packages() {
                 <Tick />
             </div>
 
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -278,7 +286,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -294,7 +302,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">
@@ -310,7 +318,7 @@ export default function Packages() {
             <div className="flex justify-center items-center">
                 <Tick />
             </div>
-            
+
             <span className="col-span-4 border-t border-[#e5e5e7]/92 mb-6 mt-1"></span>
             <div className="">
                 <p className="text-base font-medium text-[#626262]">

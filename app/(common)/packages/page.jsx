@@ -32,7 +32,7 @@ export default function Pricing() {
 
 
       {/* perfect plan */}
-      <div className="container relative z-0 pb-[100px] -mt-52 overflow-x-scroll">
+      <div className="container relative z-0 pb-[100px] -mt-52 overflow-x-scroll scrollbar_hide">
         <Packages />
       </div>
 

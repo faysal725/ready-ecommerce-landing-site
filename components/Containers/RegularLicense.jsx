@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import React from 'react'
 
 export default function RegularLicense() {
@@ -41,11 +42,13 @@ export default function RegularLicense() {
                 </p>
             </div>
 
-            <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
-                <p className="text-base font-medium text-center text-primary-red">
-                    Buy Regular License</p>
-                <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-            </button>
+            <Link href="#">
+                <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
+                    <p className="text-base font-medium text-center text-primary-red">
+                        Buy Regular License</p>
+                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                </button>
+            </Link>
         </div>
     )
 }

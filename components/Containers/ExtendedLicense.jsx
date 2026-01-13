@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import React from 'react'
 
 export default function ExtendedLicense() {
@@ -42,11 +43,14 @@ export default function ExtendedLicense() {
                 <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" /> Priority Support</p>
             </div>
 
-            <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg  bg-white  cursor-pointer">
-                <p className="text-base font-medium text-center text-primary-red">
-                    Buy Regular License</p>
-                <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-            </button>
+
+            <Link href="#">
+                <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg  bg-white  cursor-pointer">
+                    <p className="text-base font-medium text-center text-primary-red">
+                        Buy Extended License</p>
+                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                </button>
+            </Link>
         </div>
     )
 }

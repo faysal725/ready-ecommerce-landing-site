@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from 'next/link';
 
 export default function PlanSection() {
     return (
@@ -55,11 +56,13 @@ export default function PlanSection() {
                     </p>
                 </div>
 
-                <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
-                    <p className="text-base font-medium text-center text-primary-red">
-                        Buy Now</p>
-                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-                </button>
+                <Link href="#">
+                    <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
+                        <p className="text-base font-medium text-center text-primary-red">
+                            Request To Buy</p>
+                        <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                    </button>
+                </Link>
             </div>
 
 
@@ -113,13 +116,13 @@ export default function PlanSection() {
                     </p>
                 </div>
 
-
-
-                <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
-                    <p className="text-base font-medium text-center text-primary-red">
-                        Buy Now</p>
-                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-                </button>
+                <Link href="#">
+                    <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg border border-primary-red cursor-pointer">
+                        <p className="text-base font-medium text-center text-primary-red">
+                            Request To Buy</p>
+                        <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                    </button>
+                </Link>
             </div>
 
             {/* Premiume */}
@@ -156,11 +159,13 @@ export default function PlanSection() {
                     <p className="text-base text-left text-white/80 flex justify-start items-start gap-2 leading-5"> <img src="/icons/tick-white.svg" alt="" />Deliveryman App all resource Manage, Configuration App and publish AppStore.</p>
                 </div>
 
-                <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg cursor-pointer bg-white">
-                    <p className="text-base font-medium text-center text-primary-red">
-                        Buy Now</p>
-                    <ArrowRightIcon className="h-5 w-5 text-primary-red" />
-                </button>
+                <Link href="#">
+                    <button className="flex justify-center items-center w-full h-14 gap-2.5 rounded-lg cursor-pointer bg-white">
+                        <p className="text-base font-medium text-center text-primary-red">
+                            Request To Buy</p>
+                        <ArrowRightIcon className="h-5 w-5 text-primary-red" />
+                    </button>
+                </Link>
             </div>
         </div>
     )

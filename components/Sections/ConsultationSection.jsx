@@ -57,7 +57,7 @@ async function FormSection() {
 
                             {/* telegram */}
                             <a
-                                href="https://wa.link/3om70h"
+                                href="https://t.me/razinsoft"
                                 className="flex items-center justify-start gap-[15px] bg-[#18c7ff] rounded-xl w-full p-4"
                             >
                                 <img
@@ -111,7 +111,7 @@ async function FormSection() {
                         </div>
 
                         <div className="flex flex-col gap-4">
-                            <button
+                            <a
                                 href="https://calendly.com/razinsoftltd/30min"
                                 target="_blank"
                                 className="flex justify-center items-center h-14 relative overflow-hidden w-full gap-2.5 px-5 py-3.5 rounded-lg bg-white/[0.07] border border-white/50"
@@ -142,7 +142,7 @@ async function FormSection() {
                                 >
                                     Schedule a Meeting
                                 </p>
-                            </button>
+                            </a>
 
                             <p className="text-sm text-center text-white/[0.56]">
                                 Support Hours: Mon–Sat, 9 AM–6 PM (GMT+6, Asia/Dhaka)
