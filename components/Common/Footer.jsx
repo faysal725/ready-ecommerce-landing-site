@@ -192,7 +192,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="absolute -top-60 -right-10 bg-primary-red z-0 block w-[600px] h-[600px] rounded-full blur-[300px] hidden md:block"></div>
+                <div className="absolute -top-60 -right-10 bg-primary-red z-0 w-[600px] h-[600px] rounded-full blur-[300px] hidden md:block"></div>
                 <div className="absolute -bottom-80 left-0 bg-primary-red z-0 block w-[500px] h-[500px] rounded-full blur-[350px]"></div>
             </div>
         </footer>
